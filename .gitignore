@@ -6,14 +6,6 @@ certs/*.key
 # Backups
 backups/
 
-# Dados de aplicacao (vao para o disco, nao para o git)
-data/media/
-data/downloads/
-arr-stack/
-media-stack/
-immich/
-utilities/
-
 # Artefatos locais
 *.log
 .env

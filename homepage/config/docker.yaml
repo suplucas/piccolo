@@ -1,9 +1,0 @@
-# =============================================================================
-# Homepage > docker.yaml
-# Integração com o socket do Docker: status, ligar/desligar e auto-descoberta
-# de containers (pelo hostname do container).
-#
-# "my-docker" e o nome usado em "server: my-docker" dentro do services.yaml.
-# =============================================================================
-my-docker:
-  socket: /var/run/docker.sock
