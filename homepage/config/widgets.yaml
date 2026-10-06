@@ -1,0 +1,17 @@
+# =============================================================================
+# Homepage > widgets.yaml
+# Widgets de INFORMACAO (faixa no topo do painel) - metricas do SERVIDOR.
+#
+# - cpu/memoria/disco/temp vem do host via /hostfs e /sys (montados no compose).
+#   Se "disco" aparecer zerado, troque "disk: /hostfs" por "disk: /".
+# - cputemp depende de /sys/class/thermal (montado como /sys:ro).
+# =============================================================================
+- resources:
+    label: Piccolo
+    cpu: true
+    memory: true
+    disk: /hostfs
+    cputemp: true
+    uptime: true
+    units: metric      # graus em Celsius
+    refresh: 5000      # atualiza a cada 5s
