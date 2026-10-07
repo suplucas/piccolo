@@ -3,13 +3,17 @@ certs/*.key
 *.key
 *.pem
 
+certs/
+
+
+
 # Backups
 backups/
 
 # Artefatos locais
 *.log
 .env
-
+*.env
 
 **/postgres_data/
 **/data/
@@ -30,3 +34,7 @@ backups/
 *.log
 .DS_Store
 
+# Dados de runtime do Caddy e NetBird
+network/proxy/caddy_data/
+network/proxy/caddy_config/
+network/proxy/netbird-client/

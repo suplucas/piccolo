@@ -1,0 +1,54 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp' # Suporte a HTTP/3
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./certs:/etc/caddy/certs:ro
+      - ./caddy_data:/data
+      - ./caddy_config:/config
+    networks:
+      - proxy_net
+
+  cloudflare-ddns:
+    image: favonia/cloudflare-ddns:latest
+    container_name: cloudflare-ddns
+    restart: unless-stopped
+    user: "1000:1000"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+      - DOMAINS=${DOMAINS}
+      - PROXIED=true
+      - IP6_PROVIDER=none
+
+  netbird:
+    image: netbirdio/netbird:latest
+    container_name: netbird
+    hostname: thinkcentre-homelab
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+      - SYS_RESOURCE
+    network_mode: host
+    environment:
+      - NB_SETUP_KEY=${NB_SETUP_KEY}
+    volumes:
+      - netbird-client:/var/lib/netbird
+
+networks:
+  proxy_net:
+    external: true
+
+volumes:
+  netbird-client:
