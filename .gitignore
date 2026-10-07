@@ -9,3 +9,24 @@ backups/
 # Artefatos locais
 *.log
 .env
+
+
+**/postgres_data/
+**/data/
+**/library/
+**/downloads/
+**/biblioteca/
+**/config/
+**/model-cache/
+
+# Ignorar dados do Portainer
+**/portainer_data/
+
+# Ignorar segredos e variáveis de ambiente local
+**/.env
+!**/.env.example
+
+# Arquivos do sistema e logs
+*.log
+.DS_Store
+
