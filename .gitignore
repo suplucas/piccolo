@@ -16,7 +16,7 @@ backups/
 **/library/
 **/downloads/
 **/biblioteca/
-**/config/
+# **/config/
 **/model-cache/
 
 # Ignorar dados do Portainer
