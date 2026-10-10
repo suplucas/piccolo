@@ -1,29 +1,7 @@
-{
-    # Força a validação HTTP-01 que passa pelo Proxy da Cloudflare
-    steer_acme {
-        challenges http-01
-    }
+http://dash.piccollo.stream {
+	reverse_proxy glance:8080
 }
 
-dash.piccollo.stream {
-    tls /etc/caddy/certs/cert.pem /etc/caddy/certs/key.pem
-    reverse_proxy glance:8080
-}
-
-photos.piccollo.stream {
-    tls /etc/caddy/certs/cert.pem /etc/caddy/certs/key.pem
-    request_body {
-        max_size 10GB
-    }
-    reverse_proxy immich-server:2283
-}
-
-media.piccollo.stream {
-    tls /etc/caddy/certs/cert.pem /etc/caddy/certs/key.pem
-    reverse_proxy jellyfin:8096
-}
-
-portainer.piccollo.stream {
-    tls /etc/caddy/certs/cert.pem /etc/caddy/certs/key.pem
-    reverse_proxy portainer:9000
+http://portainer.piccollo.stream {
+  reverse_proxy portainer:9443/#!/auth
 }

@@ -12,3 +12,9 @@ services:
     ports:
       - 8080:8080
     env_file: .env
+    networks:
+      - proxy_net   # <--- Conecta o container à rede do proxy
+
+networks:
+  proxy_net:
+    external: true

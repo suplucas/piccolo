@@ -6,8 +6,14 @@ services:
     container_name: jellyfin
     restart: unless-stopped
     user: "1000:1000" # Importante para não dar erro de permissão nos arquivos baixados
-    network_mode: "host"
+    # network_mode: "host"
     volumes:
       - ./config:/config
       - /homelab/media/biblioteca:/media/biblioteca:ro  # Somente leitura (sua lib fixa)
       - /homelab/media/downloads:/media/downloads:ro    # Onde os torrents vão caindo
+    networks:
+      - proxy_net   # <--- Conecta o container à rede do proxy
+
+networks:
+  proxy_net:
+    external: true

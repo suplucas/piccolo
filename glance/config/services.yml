@@ -16,13 +16,14 @@
               url: http://192.168.0.32:8096/web/#/home
               icon: si:jellyfin
 
-            - title: Gitea
-              url: https://yourdomain.com/
-              icon: si:gitea
+            - title: Portainer
+              url: https://192.168.0.32:9443
+              icon: si:portainer
 
             - title: qBittorrent # only for Linux ISOs, of course
               url: https://yourdomain.com/
               icon: si:qbittorrent
+
             - title: Immich
               url: http://192.168.0.32:2283
               icon: si:immich
