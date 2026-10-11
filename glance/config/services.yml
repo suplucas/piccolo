@@ -28,8 +28,13 @@
               url: https://immich.piccollo.stream
               icon: si:immich
 
+<<<<<<< HEAD
             - title: AdGuard Home
               url: https://adguard.piccollo.stream
+=======
+            - title: NextCloud 
+              url: https://yourdomain.com/
+>>>>>>> 588081b (fix glance)
               icon: si:adguard
             - title: Vaultwarden
               url: https://vault.piccollo.stream

@@ -50,6 +50,8 @@ services:
     depends_on:
       - nextcloud-db
       - nextcloud-redis
+    ports:  
+      - "8081:80"
     deploy:
       resources:
         limits:
