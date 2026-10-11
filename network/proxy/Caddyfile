@@ -3,15 +3,7 @@ http://dash.piccollo.stream {
 	reverse_proxy glance:8080
 }
 
-https://dash.piccollo.stream {
-	reverse_proxy glance:8080
-}
-
 http://jellyfin.piccollo.stream {
-	reverse_proxy jellyfin:8096
-}
-
-https://jellyfin.piccollo.stream {
 	reverse_proxy jellyfin:8096
 }
 
@@ -19,15 +11,7 @@ http://immich.piccollo.stream {
 	reverse_proxy immich_server:2283
 }
 
-https://immich.piccollo.stream {
-	reverse_proxy immich_server:2283
-}
-
 http://qbittorrent.piccollo.stream {
-	reverse_proxy qbittorrent:8080
-}
-
-https://qbittorrent.piccollo.stream {
 	reverse_proxy qbittorrent:8080
 }
 
@@ -35,15 +19,7 @@ http://adguard.piccollo.stream {
 	reverse_proxy adguardhome:3000
 }
 
-https://adguard.piccollo.stream {
-	reverse_proxy adguardhome:3000
-}
-
 http://vault.piccollo.stream {
-	reverse_proxy vaultwarden:80
-}
-
-https://vault.piccollo.stream {
 	reverse_proxy vaultwarden:80
 }
 
@@ -51,6 +27,14 @@ http://portainer.piccollo.stream {
 	reverse_proxy portainer:9443
 }
 
-https://portainer.piccollo.stream {
-	reverse_proxy portainer:9443
+http://seerr.piccollo.stream {
+	reverse_proxy seerr:5055
+}
+
+http://radarr.piccollo.stream {
+	reverse_proxy radarr:7878
+}
+
+http://prowlarr.piccollo.stream {
+	reverse_proxy prowlarr:9696
 }

@@ -1,0 +1,17 @@
+services:
+  prowlarr:
+    container_name: prowlarr
+    image: linuxserver/prowlarr:latest
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./config:/config
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true

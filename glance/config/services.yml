@@ -16,9 +16,17 @@
               url: https://jellyfin.piccollo.stream/web/#/home
               icon: si:jellyfin
 
-            - title: Portainer
-              url: https://portainer.piccollo.stream
-              icon: si:portainer
+            - title: Seerr
+              url: https://seerr.piccollo.stream
+              icon: mdi:movie-search
+
+            - title: Radarr
+              url: https://radarr.piccollo.stream
+              icon: si:radarr
+
+            - title: Prowlarr
+              url: https://prowlarr.piccollo.stream
+              icon: si:prowlarr
 
             - title: qBittorrent # only for Linux ISOs, of course
               url: https://qbittorrent.piccollo.stream
@@ -28,17 +36,21 @@
               url: https://immich.piccollo.stream
               icon: si:immich
 
-<<<<<<< HEAD
             - title: AdGuard Home
               url: https://adguard.piccollo.stream
-=======
-            - title: NextCloud 
-              url: https://yourdomain.com/
->>>>>>> 588081b (fix glance)
               icon: si:adguard
+
             - title: Vaultwarden
               url: https://vault.piccollo.stream
               icon: si:vaultwarden
+
+            - title: NextCloud
+              url: https://yourdomain.com/
+              icon: si:nextcloud
+
+            - title: Portainer
+              url: https://portainer.piccollo.stream
+              icon: si:portainer
 
         - type: bookmarks
           groups:

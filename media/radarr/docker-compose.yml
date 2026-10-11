@@ -1,0 +1,19 @@
+services:
+  radarr:
+    container_name: radarr
+    image: linuxserver/radarr:latest
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./config:/config
+      - /homelab/media/biblioteca/movies:/movies
+      - /homelab/media/downloads:/downloads
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true
