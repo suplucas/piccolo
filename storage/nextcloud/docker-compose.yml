@@ -6,9 +6,9 @@ services:
     environment:
       POSTGRES_DB: nextcloud
       POSTGRES_USER: nextcloud
-      POSTGRES_PASSWORD: "sua_senha_segura_aqui"
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - nextcloud_db_data:/var/lib/postgresql/data
+      - /homelab/storage/nextcloud/db:/var/lib/postgresql/data
     networks:
       - proxy_net
     deploy:
@@ -39,29 +39,31 @@ services:
       - POSTGRES_HOST=nextcloud-db
       - POSTGRES_DB=nextcloud
       - POSTGRES_USER=nextcloud
-      - POSTGRES_PASSWORD=="sua_senha_segura_aqui"
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - REDIS_HOST=nextcloud-redis
+      # Reverse proxy (Caddy + Cloudflare Tunnel)
+      - NEXTCLOUD_TRUSTED_DOMAINS=cloud.piccollo.stream
+      - OVERWRITEHOST=cloud.piccollo.stream
+      - OVERWRITEPROTOCOL=https
+      - OVERWRITECLIURL=https://cloud.piccollo.stream
+      - TRUSTED_PROXIES=172.16.0.0/12,10.0.0.0/8,192.168.0.0/16
+      # Usados apenas na primeira inicialização
+      - NEXTCLOUD_ADMIN_USER=${NEXTCLOUD_ADMIN_USER}
+      - NEXTCLOUD_ADMIN_PASSWORD=${NEXTCLOUD_ADMIN_PASSWORD}
+      - NEXTCLOUD_ADMIN_EMAIL=${NEXTCLOUD_ADMIN_EMAIL}
     volumes:
-      - nextcloud_data:/var/www/html
-      # Se você quiser mapear um diretório externo específico para os arquivos:
-      # - /caminho/para/seu/storage:/var/www/html/data
+      - /homelab/storage/nextcloud/data:/var/www/html
     networks:
       - proxy_net
     depends_on:
       - nextcloud-db
       - nextcloud-redis
-    ports:  
-      - "8081:80"
     deploy:
       resources:
         limits:
           memory: 8G
         reservations:
           memory: 2G
-
-volumes:
-  nextcloud_db_data:
-  nextcloud_data:
 
 networks:
   proxy_net:

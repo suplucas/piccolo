@@ -23,6 +23,10 @@ http://vault.piccollo.stream {
 	reverse_proxy vaultwarden:80
 }
 
+http://cloud.piccollo.stream {
+	reverse_proxy nextcloud:80
+}
+
 http://portainer.piccollo.stream {
 	reverse_proxy portainer:9443
 }

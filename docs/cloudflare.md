@@ -21,6 +21,7 @@ hostname para cada serviço apontando para o Caddy:
 | `immich`       | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `adguard`      | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `vault`        | `piccollo.stream`| HTTP | `http://caddy:80`|
+| `cloud`        | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `portainer`    | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `status`       | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `beszel`       | `piccollo.stream`| HTTP | `http://caddy:80`|

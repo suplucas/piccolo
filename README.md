@@ -44,6 +44,7 @@ nome de host. O TLS é terminado na Cloudflare (o túnel fala HTTP com o Caddy).
 | Immich         | `immich.piccollo.stream`         | `immich_server:2283`   |
 | AdGuard Home   | `adguard.piccollo.stream`        | `adguardhome:3000`     |
 | Vaultwarden    | `vault.piccollo.stream`          | `vaultwarden:80`       |
+| Nextcloud      | `cloud.piccollo.stream`          | `nextcloud:80`         |
 | Portainer      | `portainer.piccollo.stream`      | `portainer:9443`       |
 | Gatus (status) | `status.piccollo.stream`         | `gatus:8080`           |
 | Beszel         | `beszel.piccollo.stream`         | `beszel:8090`          |
@@ -77,6 +78,7 @@ precisa deles deve tê-los no servidor:
 - `glance/.env`
 - `media/immich/.env` → `UPLOAD_LOCATION`, `DB_*`
 - `storage/vaultwarden/.env` → `VAULTWARDEN_ADMIN_TOKEN`
+- `storage/nextcloud/.env` → `POSTGRES_PASSWORD`, `NEXTCLOUD_ADMIN_*` (veja `.env.example`)
 - `network/monitoring/beszel/.env` → `BESZEL_KEY`, `BESZEL_TOKEN` (veja `.env.example`)
 
 ## Documentação
