@@ -57,6 +57,17 @@ containers precisam ver os mesmos caminhos:
 4. **Jellyfin**: garanta que a biblioteca aponta para
    `/media/biblioteca/movies` (dentro do container).
 
+## Redes
+
+Cada stack tem seu **próprio projeto/nome** (não compartilhe `name:` entre stacks —
+senão o `up --remove-orphans` de uma remove os containers da outra).
+
+- **Immich**: o `immich-server` fica em `proxy_net` (para o Caddy) **e** em
+  `immich_internal` (rede interna, isolada). `database`, `redis` e
+  `immich-machine-learning` ficam **só** em `immich_internal`.
+  > Se você colocar só o `immich-server` numa rede e o `database` na default,
+  > o server não resolve `database` (`getaddrinfo EAI_AGAIN database`).
+
 ## Uso
 
 - O usuário busca/requisita no **Seerr**.
