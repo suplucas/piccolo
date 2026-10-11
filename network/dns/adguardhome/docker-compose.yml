@@ -1,0 +1,16 @@
+services:
+  adguardhome:
+    container_name: adguardhome
+    image: adguard/adguardhome:latest
+    restart: unless-stopped
+    networks:
+      - proxy_net
+    volumes:
+      - ./work:/opt/adguardhome/work
+      - ./conf:/opt/adguardhome/conf
+    ports:
+      - 3000:3000
+
+networks:
+  proxy_net:
+    external: true

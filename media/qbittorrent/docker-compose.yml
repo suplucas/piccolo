@@ -1,0 +1,22 @@
+services:
+  qbittorrent:
+    container_name: qbittorrent
+    image: linuxserver/qbittorrent:latest
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+      - WEBUI_PORT=8080
+    volumes:
+      - ./config:/config
+      - /homelab/media/downloads:/downloads
+    networks:
+      - proxy_net
+    ports:
+      - 6881:6881
+      - 6881:6881/udp
+
+networks:
+  proxy_net:
+    external: true

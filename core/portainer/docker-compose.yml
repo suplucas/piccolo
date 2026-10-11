@@ -8,12 +8,17 @@ services:
       - portainer_data:/data
     ports:
       - 9443:9443
-      - 8000:8000  # Remove if you do not intend to use Edge Agents
+      - 8000:8000
+    networks:
+      - proxy_net
+      - portainer_network
+
+networks:
+  proxy_net:
+    external: true
+  portainer_network:
+    name: portainer_network
 
 volumes:
   portainer_data:
     name: portainer_data
-
-networks:
-  default:
-    name: portainer_network

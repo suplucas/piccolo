@@ -13,26 +13,26 @@
           title: Services
           sites:
             - title: Jellyfin
-              url: http://192.168.0.32:8096/web/#/home
+              url: https://jellyfin.piccollo.stream/web/#/home
               icon: si:jellyfin
 
             - title: Portainer
-              url: https://192.168.0.32:9443
+              url: https://portainer.piccollo.stream
               icon: si:portainer
 
             - title: qBittorrent # only for Linux ISOs, of course
-              url: https://yourdomain.com/
+              url: https://qbittorrent.piccollo.stream
               icon: si:qbittorrent
 
             - title: Immich
-              url: http://192.168.0.32:2283
+              url: https://immich.piccollo.stream
               icon: si:immich
 
             - title: AdGuard Home
-              url: https://yourdomain.com/
+              url: https://adguard.piccollo.stream
               icon: si:adguard
             - title: Vaultwarden
-              url: https://yourdomain.com/
+              url: https://vault.piccollo.stream
               icon: si:vaultwarden
 
         - type: bookmarks

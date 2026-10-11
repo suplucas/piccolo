@@ -1,0 +1,17 @@
+services:
+  vaultwarden:
+    container_name: vaultwarden
+    image: vaultwarden/server:latest
+    restart: unless-stopped
+    environment:
+      - DOMAIN=https://vault.piccollo.stream
+      - SIGNUPS_ALLOWED=false
+      - ADMIN_TOKEN=${VAULTWARDEN_ADMIN_TOKEN}
+    volumes:
+      - ./data:/data
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true
