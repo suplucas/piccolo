@@ -38,3 +38,15 @@ http://radarr.piccollo.stream {
 http://prowlarr.piccollo.stream {
 	reverse_proxy prowlarr:9696
 }
+
+http://status.piccollo.stream {
+	reverse_proxy gatus:8080
+}
+
+http://beszel.piccollo.stream {
+	reverse_proxy beszel:8090
+}
+
+http://logs.piccollo.stream {
+	reverse_proxy dozzle:8080
+}

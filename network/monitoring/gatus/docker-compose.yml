@@ -1,0 +1,13 @@
+services:
+  gatus:
+    container_name: gatus
+    image: twinproduction/gatus:latest
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true

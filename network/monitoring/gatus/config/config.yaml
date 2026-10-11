@@ -1,0 +1,119 @@
+# Configuracao declarativa do Gatus (uptime/health checks).
+# Documentacao: https://github.com/TwiN/gatus
+
+storage:
+  type: sqlite
+  path: /config/gatus.db
+
+web:
+  port: 8080
+
+ui:
+  title: Homelab Status
+  header: Homelab Status
+  default-sort-by: group
+
+# Descomente para proteger a UI com basic auth (ou use Cloudflare Access):
+# security:
+#   basic:
+#     username: admin
+#     password-sha256: "cole-aqui-o-hash-sha256"
+
+# Descomente para alertar em Telegram/Discord/etc.:
+# alerting:
+#   telegram:
+#     token: "${TELEGRAM_TOKEN}"
+#     id: "${TELEGRAM_CHAT_ID}"
+#   discord:
+#     webhook-url: "${DISCORD_WEBHOOK}"
+
+endpoints:
+  # ---- Core ----
+  - name: Glance
+    group: Core
+    url: "http://glance:8080"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: Caddy
+    group: Core
+    url: "http://caddy:80"
+    interval: 1m
+    conditions:
+      - "[STATUS] < 500"
+
+  - name: Portainer
+    group: Core
+    url: "https://portainer:9443"
+    interval: 1m
+    client:
+      insecure: true
+    conditions:
+      - "[STATUS] < 500"
+
+  # ---- Media ----
+  - name: Jellyfin
+    group: Media
+    url: "http://jellyfin:8096/health"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: Seerr
+    group: Media
+    url: "http://seerr:5055/api/v1/status"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: Radarr
+    group: Media
+    url: "http://radarr:7878/ping"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: Prowlarr
+    group: Media
+    url: "http://prowlarr:9696/ping"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: qBittorrent
+    group: Media
+    url: "http://qbittorrent:8080"
+    interval: 1m
+    conditions:
+      - "[STATUS] < 500"
+
+  - name: Immich
+    group: Media
+    url: "http://immich_server:2283/api/server/ping"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  # ---- Network ----
+  - name: AdGuard Home
+    group: Network
+    url: "http://adguardhome:3000"
+    interval: 1m
+    conditions:
+      - "[STATUS] < 500"
+
+  # ---- Storage ----
+  - name: Vaultwarden
+    group: Storage
+    url: "http://vaultwarden:80/alive"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: Nextcloud
+    group: Storage
+    url: "http://nextcloud:80/status.php"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"

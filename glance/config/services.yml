@@ -52,6 +52,18 @@
               url: https://portainer.piccollo.stream
               icon: si:portainer
 
+            - title: Status (Gatus)
+              url: https://status.piccollo.stream
+              icon: mdi:heart-pulse
+
+            - title: Metrics (Beszel)
+              url: https://beszel.piccollo.stream
+              icon: mdi:chart-line
+
+            - title: Logs (Dozzle)
+              url: https://logs.piccollo.stream
+              icon: mdi:text-box-search
+
         - type: bookmarks
           groups:
             - title: General

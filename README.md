@@ -19,7 +19,8 @@ piccolo/
 │   └── immich/            # Fotos
 ├── network/
 │   ├── proxy/             # Caddy + Cloudflare Tunnel + NetBird
-│   └── dns/adguardhome/   # DNS / WebUI
+│   ├── dns/adguardhome/   # DNS / WebUI
+│   └── monitoring/        # Gatus + Beszel + Dozzle
 ├── storage/
 │   ├── nextcloud/         # Nuvem própria
 │   └── vaultwarden/       # Gerenciador de senhas
@@ -44,6 +45,9 @@ nome de host. O TLS é terminado na Cloudflare (o túnel fala HTTP com o Caddy).
 | AdGuard Home   | `adguard.piccollo.stream`        | `adguardhome:3000`     |
 | Vaultwarden    | `vault.piccollo.stream`          | `vaultwarden:80`       |
 | Portainer      | `portainer.piccollo.stream`      | `portainer:9443`       |
+| Gatus (status) | `status.piccollo.stream`         | `gatus:8080`           |
+| Beszel         | `beszel.piccollo.stream`         | `beszel:8090`          |
+| Dozzle (logs)  | `logs.piccollo.stream`           | `dozzle:8080`          |
 
 > Radarr e Prowlarr devem ficar **protegidos** — veja `docs/cloudflare.md`.
 
@@ -73,9 +77,11 @@ precisa deles deve tê-los no servidor:
 - `glance/.env`
 - `media/immich/.env` → `UPLOAD_LOCATION`, `DB_*`
 - `storage/vaultwarden/.env` → `VAULTWARDEN_ADMIN_TOKEN`
+- `network/monitoring/beszel/.env` → `BESZEL_KEY`, `BESZEL_TOKEN` (veja `.env.example`)
 
 ## Documentação
 
 - [`docs/cloudflare.md`](docs/cloudflare.md) — túnel, hostnames e Cloudflare Access
 - [`docs/media-stack.md`](docs/media-stack.md) — Jellyfin + Seerr + *arr (fluxo completo)
 - [`docs/jellyfreedom.md`](docs/jellyfreedom.md) — assistir enquanto baixa (streaming sob demanda)
+- [`docs/monitoring.md`](docs/monitoring.md) — Gatus + Beszel + Dozzle
