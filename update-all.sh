@@ -21,10 +21,11 @@ echo " Atualizando stacks do Homelab: $(date)"
 echo " Raiz: $HOMELAB_DIR"
 echo "=========================================="
 
-# 1. Atualiza o repositório (baixa as últimas alterações de config)
+# 1. Atualiza o repositório (baixa as últimas alterações de config do origin)
 if [ "$DO_GIT_PULL" -eq 1 ] && [ -d "$HOMELAB_DIR/.git" ]; then
   echo ""
-  echo "--> git pull (atualizando o repositório)"
+  echo "--> Sincronizando com o origin (git fetch + pull)"
+  git -C "$HOMELAB_DIR" fetch origin
   git -C "$HOMELAB_DIR" pull --ff-only
 fi
 
