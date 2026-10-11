@@ -28,7 +28,13 @@ http://cloud.piccollo.stream {
 }
 
 http://portainer.piccollo.stream {
-	reverse_proxy portainer:9443
+	# Portainer serve HTTPS (self-signed) na 9443
+	reverse_proxy https://portainer:9443 {
+		header_up X-Forwarded-Proto https
+		transport http {
+			tls_insecure_skip_verify
+		}
+	}
 }
 
 http://seerr.piccollo.stream {

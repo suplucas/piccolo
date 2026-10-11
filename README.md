@@ -87,3 +87,4 @@ precisa deles deve tê-los no servidor:
 - [`docs/media-stack.md`](docs/media-stack.md) — Jellyfin + Seerr + *arr (fluxo completo)
 - [`docs/jellyfreedom.md`](docs/jellyfreedom.md) — assistir enquanto baixa (streaming sob demanda)
 - [`docs/monitoring.md`](docs/monitoring.md) — Gatus + Beszel + Dozzle
+- [`docs/portainer.md`](docs/portainer.md) — Portainer atrás do Caddy (domínio público)

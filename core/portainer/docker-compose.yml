@@ -3,12 +3,18 @@ services:
     container_name: portainer
     image: portainer/portainer-ce:lts
     restart: always
+    # Public domain behind reverse proxy:
+    #   --trusted-origins evita "Origin invalid" (CSRF)
+    #   --trusted-proxies confia nos headers X-Forwarded-* do Caddy (IP real nos logs)
+    command:
+      - --trusted-origins=https://portainer.piccollo.stream
+      - --trusted-proxies=172.16.0.0/12,10.0.0.0/8,192.168.0.0/16
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
     ports:
       - 9443:9443
-      - 8000:8000
+      - 8000:8000  # Edge agent tunnel (remova se nao usar Edge)
     networks:
       - proxy_net
       - portainer_network
