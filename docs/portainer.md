@@ -36,15 +36,16 @@ Por que:
 ```yaml
 command:
   - --trusted-origins=https://portainer.piccollo.stream
-  - --trusted-proxies=172.16.0.0/12,10.0.0.0/8,192.168.0.0/16
 ```
 
 - **`--trusted-origins`**: evita o erro **"Origin invalid"** (proteção CSRF)
   quando o `Origin` do browser (`https://portainer.piccollo.stream`) é comparado
   com o `Host` encaminhado.
-- **`--trusted-proxies`**: diz ao Portainer para confiar nos headers
-  `X-Forwarded-For` do Caddy, para mostrar o **IP real** na aba *Authentication
-  logs* em vez do IP do proxy.
+
+> ⚠️ **`--trusted-proxies` não existe no Portainer 2.45.x (tag `:lts`)** — usar
+> esse flag faz o container falhar com `unknown long flag`. Ele serve apenas
+> para mostrar o IP real na aba *Authentication logs*; sem ele, aparece o IP do
+> proxy. Só use se a sua versão do Portainer suportar (`--help` para conferir).
 
 ## Observações
 

@@ -5,10 +5,9 @@ services:
     restart: always
     # Public domain behind reverse proxy:
     #   --trusted-origins evita "Origin invalid" (CSRF)
-    #   --trusted-proxies confia nos headers X-Forwarded-* do Caddy (IP real nos logs)
+    #   (--trusted-proxies nao existe no Portainer 2.45.x/:lts)
     command:
       - --trusted-origins=https://portainer.piccollo.stream
-      - --trusted-proxies=172.16.0.0/12,10.0.0.0/8,192.168.0.0/16
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
