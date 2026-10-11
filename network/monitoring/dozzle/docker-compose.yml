@@ -5,8 +5,17 @@ services:
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - dozzle_data:/data   # persistencia de configuracoes (senao: "/data is not mounted")
     networks:
       - proxy_net
+    # Descomente para habilitar recursos opcionais (veja dozzle.dev/guide):
+    # environment:
+    #   - DOZZLE_AUTH_PROVIDER=simple      # login via users.yml
+    #   - DOZZLE_ENABLE_ACTIONS=true       # stop/start/restart containers
+    #   - DOZZLE_ENABLE_SHELL=true         # acesso ao shell dos containers
+
+volumes:
+  dozzle_data:
 
 networks:
   proxy_net:

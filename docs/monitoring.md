@@ -65,7 +65,14 @@ docker compose up -d
 
 - Logs de todos os containers em tempo real, somente leitura
   (`/var/run/docker.sock:ro`).
+- Monta um volume em **`/data`** (`dozzle_data`) para persistir configurações —
+  sem ele, o Dozzle mostra *"`/data` is not mounted, so this can't be saved"*.
 - Sem configuração adicional.
+
+> ⚠️ **Segurança**: o Dozzle tem acesso equivalente a **root** no host (via
+> `docker.sock`). Nunca exponha sem autenticação — use **Cloudflare Access**
+> (veja `cloudflare.md`) ou habilite `DOZZLE_AUTH_PROVIDER=simple` (users.yml).
+> Mantenha `DOZZLE_ENABLE_ACTIONS`/`DOZZLE_ENABLE_SHELL` desligados se não precisar.
 
 ## Segurança
 
