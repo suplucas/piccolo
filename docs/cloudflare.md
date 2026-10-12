@@ -78,5 +78,34 @@ nunca ficam expostos publicamente. É a opção mais segura para `logs`/`beszel`
 ## 3. NetBird (VPN)
 
 O `netbird` roda com `network_mode: host` e usa `NB_SETUP_KEY` (do `.env`).
-Clientes entram na rede com `sudo netbird up` e alcançam os serviços pelo IP
-NetBird do host, sem depender do túnel.
+Clientes entram na rede e alcançam os serviços pelo IP NetBird do host, sem
+depender do túnel. É também o caminho recomendado para **streaming** (`Jellyfin`),
+já que o túnel da Cloudflare limita/trava vídeo no plano grátis.
+
+### Como conectar de fora
+
+1. Instale o **cliente NetBird** no dispositivo: app **NetBird** (Android/iOS)
+   ou CLI para desktop (`netbird`) — https://app.netbird.io.
+2. Entre com a conta da organização do servidor e conecte (`netbird up`).
+3. Descubra o IP do host dentro da VPN (na máquina servidor):
+
+   ```bash
+   ip addr show wt0     # ex.: inet 100.90.38.203/16
+   ```
+
+4. Acesse os serviços pelo IP (`100.x.x.x`) em vez do domínio.
+
+### Serviços publicados apenas na VPN
+
+| Serviço  | URL (dentro da VPN)           | Motivo                 |
+|----------|-------------------------------|------------------------|
+| Jellyfin | `http://100.90.38.203:8096`  | Streaming fora do túnel |
+
+O Jellyfin está publicado **somente** na interface da VPN, então não aparece na
+internet nem passa pelo Cloudflare:
+
+```yaml
+# media/jellyfin/docker-compose.yml
+ports:
+  - "100.90.38.203:8096:8096/tcp"
+```

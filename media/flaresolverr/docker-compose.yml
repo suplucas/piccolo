@@ -1,0 +1,14 @@
+services:
+  flaresolverr:
+    container_name: flaresolverr
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    restart: unless-stopped
+    environment:
+      - TZ=America/Sao_Paulo
+      - LOG_LEVEL=info
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true

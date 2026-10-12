@@ -1,0 +1,16 @@
+{
+  "category": "Subtitles",
+  "changelog": "- Unstable: Update to latest Jellyfin preview packages (#207) @crobibero, @jellyfin-bot\n- Add handling for small video files (#192) @MBR-0001\n\n### Dependency updates ###\n- Update dependency xunit.runner.visualstudio to v4 (#215) [@renovate[bot]](https://github.com/apps/renovate)\n- Update dependency coverlet.collector to v10 (#212) [@renovate[bot]](https://github.com/apps/renovate)",
+  "description": "Download subtitles from the internet to use with your media files. (Requires configuration)",
+  "guid": "4b9ed42f-5185-48b5-9803-6ff2989014c4",
+  "name": "Open Subtitles",
+  "overview": "Download subtitles for your media",
+  "owner": "jellyfin",
+  "targetAbi": "12.0.0.0",
+  "timestamp": "2026-09-08T02:38:35.0000000Z",
+  "version": "25.0.0.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "imagePath": "/config/plugins/OpenSubtitles/jellyfin-plugin-opensubtitles.png",
+  "assemblies": []
+}

@@ -51,6 +51,9 @@ nome de host. O TLS é terminado na Cloudflare (o túnel fala HTTP com o Caddy).
 | Dozzle (logs)  | `logs.piccollo.stream`           | `dozzle:8080`          |
 
 > Radarr e Prowlarr devem ficar **protegidos** — veja `docs/cloudflare.md`.
+>
+> O **Jellyfin** também é acessível para **streaming fora do túnel** via VPN
+> NetBird em `http://100.90.38.203:8096` — veja `docs/cloudflare.md`.
 
 ## Deploy
 
