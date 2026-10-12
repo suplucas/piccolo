@@ -16,7 +16,7 @@ http://qbittorrent.piccollo.stream {
 }
 
 http://adguard.piccollo.stream {
-	reverse_proxy adguardhome:3000
+	reverse_proxy adguardhome:80
 }
 
 http://vault.piccollo.stream {

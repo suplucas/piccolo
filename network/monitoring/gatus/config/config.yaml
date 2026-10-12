@@ -98,7 +98,7 @@ endpoints:
   # ---- Network ----
   - name: AdGuard Home
     group: Network
-    url: "http://adguardhome:3000"
+    url: "http://adguardhome:80"
     interval: 1m
     conditions:
       - "[STATUS] < 500"

@@ -9,7 +9,7 @@ services:
       - ./work:/opt/adguardhome/work
       - ./conf:/opt/adguardhome/conf
     ports:
-      - 3000:3000
+      - 3000:80
 
 networks:
   proxy_net:
