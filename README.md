@@ -35,7 +35,7 @@ nome de host. O TLS é terminado na Cloudflare (o túnel fala HTTP com o Caddy).
 
 | Serviço        | Domínio                          | Alvo no Caddy          |
 |----------------|----------------------------------|------------------------|
-| Glance         | `dash.piccollo.stream`           | `glance:8080`          |
+| Glance         | — (só VPN)                       | `glance:8080`          |
 | Jellyfin       | `jellyfin.piccollo.stream`       | `jellyfin:8096`        |
 | Seerr          | `seerr.piccollo.stream`          | `seerr:5055`           |
 | Radarr         | `radarr.piccollo.stream`         | `radarr:7878`          |
@@ -46,11 +46,15 @@ nome de host. O TLS é terminado na Cloudflare (o túnel fala HTTP com o Caddy).
 | Vaultwarden    | `vault.piccollo.stream`          | `vaultwarden:80`       |
 | Nextcloud      | `cloud.piccollo.stream`          | `nextcloud:80`         |
 | Portainer      | `portainer.piccollo.stream`      | `portainer:9443`       |
-| Gatus (status) | `status.piccollo.stream`         | `gatus:8080`           |
-| Beszel         | `beszel.piccollo.stream`         | `beszel:8090`          |
-| Dozzle (logs)  | `logs.piccollo.stream`           | `dozzle:8080`          |
+| Gatus (status) | — (só VPN)                       | `gatus:8080`           |
+| Beszel         | — (só VPN)                       | `beszel:8090`          |
+| Dozzle (logs)  | — (só VPN)                       | `dozzle:8080`          |
 
 > Radarr e Prowlarr devem ficar **protegidos** — veja `docs/cloudflare.md`.
+>
+> Serviços **sem autenticação** (Glance, Gatus, Beszel, Dozzle) ficam **apenas na
+> VPN NetBird**: `http://100.90.38.203:{8080,8081,8082,8090}` — veja
+> `docs/cloudflare.md`.
 >
 > O **Jellyfin** também é acessível para **streaming fora do túnel** via VPN
 > NetBird em `http://100.90.38.203:8096` — veja `docs/cloudflare.md`.

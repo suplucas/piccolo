@@ -10,7 +10,7 @@
 
         - type: monitor
           cache: 1m
-          title: Services
+          title: Mídia
           sites:
             - title: Jellyfin
               url: https://jellyfin.piccollo.stream/web/#/home
@@ -32,36 +32,48 @@
               url: https://qbittorrent.piccollo.stream
               icon: si:qbittorrent
 
+        - type: monitor
+          cache: 1m
+          title: Cloud & Fotos
+          sites:
             - title: Immich
               url: https://immich.piccollo.stream
               icon: si:immich
-
-            - title: AdGuard Home
-              url: https://adguard.piccollo.stream
-              icon: si:adguard
-
-            - title: Vaultwarden
-              url: https://vault.piccollo.stream
-              icon: si:vaultwarden
 
             - title: NextCloud
               url: https://cloud.piccollo.stream
               icon: si:nextcloud
 
+            - title: Vaultwarden
+              url: https://vault.piccollo.stream
+              icon: si:vaultwarden
+
+        - type: monitor
+          cache: 1m
+          title: Rede & Admin
+          sites:
+            - title: AdGuard Home
+              url: https://adguard.piccollo.stream
+              icon: si:adguard
+
             - title: Portainer
               url: https://portainer.piccollo.stream
               icon: si:portainer
 
+        - type: monitor
+          cache: 1m
+          title: Monitoramento
+          sites:
             - title: Status (Gatus)
-              url: https://status.piccollo.stream
+              url: http://100.90.38.203:8081
               icon: mdi:heart-pulse
 
             - title: Metrics (Beszel)
-              url: https://beszel.piccollo.stream
+              url: http://100.90.38.203:8090
               icon: mdi:chart-line
 
             - title: Logs (Dozzle)
-              url: https://logs.piccollo.stream
+              url: http://100.90.38.203:8082
               icon: mdi:text-box-search
 
         - type: bookmarks

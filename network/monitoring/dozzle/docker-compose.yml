@@ -6,6 +6,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - dozzle_data:/data   # persistencia de configuracoes (senao: "/data is not mounted")
+    ports:
+      - "100.90.38.203:8082:8080/tcp"   # só via VPN NetBird (logs, sem auth)
     networks:
       - proxy_net
     # Descomente para habilitar recursos opcionais (veja dozzle.dev/guide):

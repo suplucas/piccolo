@@ -2,11 +2,14 @@
 
 Stack de monitoramento **como código** (configuração versionada no git):
 
-| Serviço | Função | Domínio | Imagem |
-|---------|--------|---------|--------|
-| **Gatus** | Uptime/health checks declarativos (YAML) | `status.piccollo.stream` | `twinproduction/gatus` |
-| **Beszel** | Métricas de host e containers | `beszel.piccollo.stream` | `henrygd/beszel` + `beszel-agent` |
-| **Dozzle** | Logs dos containers em tempo real | `logs.piccollo.stream` | `amir20/dozzle` |
+| Serviço | Função | Acesso (só VPN NetBird) | Imagem |
+|---------|--------|-------------------------|--------|
+| **Gatus** | Uptime/health checks declarativos (YAML) | `http://100.90.38.203:8081` | `twinproduction/gatus` |
+| **Beszel** | Métricas de host e containers | `http://100.90.38.203:8090` | `henrygd/beszel` + `beszel-agent` |
+| **Dozzle** | Logs dos containers em tempo real | `http://100.90.38.203:8082` | `amir20/dozzle` |
+
+> Os três **não têm autenticação** e ficam **fora do túnel**: sem Public Hostname,
+> publicados somente na interface NetBird (`100.90.38.203`). Veja `cloudflare.md`.
 
 ## Gatus
 
@@ -15,7 +18,7 @@ Arquivo: `network/monitoring/gatus/config/config.yaml`.
 - Checks HTTP a cada 1 minuto contra os serviços na rede `proxy_net`
   (Jellyfin `/health`, Radarr `/ping`, Vaultwarden `/alive`, etc.).
 - Histórico em SQLite (`/config/gatus.db`).
-- Página de status em `status.piccollo.stream`.
+- Página de status em `http://100.90.38.203:8081` (só VPN).
 
 ### Adicionar um novo check
 
@@ -52,7 +55,7 @@ Hub + agente (mesma máquina, via socket unix).
 ### Setup
 
 1. Suba a stack: `cd network/monitoring/beszel && docker compose up -d`.
-2. Acesse `http://<host>:8090`, crie a conta de admin.
+2. Acesse `http://100.90.38.203:8090`, crie a conta de admin.
 3. **Add System** → copie `KEY` e `TOKEN` para
    `network/monitoring/beszel/.env` (veja `.env.example`) e recrie o agente:
 
@@ -76,20 +79,29 @@ docker compose up -d
 
 ## Segurança
 
-- **Gatus**, **Beszel** e **Dozzle** não têm auth forte por padrão.
-  Proteja-os no **Cloudflare Access** (veja `cloudflare.md`) ou mantenha só na
-  **VPN NetBird**.
-- Alternativamente, Gatus suporta basic auth (`security.basic` no `config.yaml`).
+- **Gatus**, **Beszel** e **Dozzle** não têm auth forte por padrão — por isso
+  ficam **só na VPN NetBird** (sem Public Hostname no túnel). As portas são
+  publicadas**somente** na interface `100.90.38.203`.
+- Se quiser expor algum publicamente no futuro, use **Cloudflare Access**
+  (veja `cloudflare.md`) ou, no Gatus, basic auth (`security.basic`).
 
-## Rotas
+## Acesso na VPN
 
-Adicionadas ao `Caddyfile`:
+Publicação das portas (somente na interface NetBird):
 
-```caddy
-http://status.piccollo.stream { reverse_proxy gatus:8080 }
-http://beszel.piccollo.stream { reverse_proxy beszel:8090 }
-http://logs.piccollo.stream   { reverse_proxy dozzle:8080 }
+```yaml
+# network/monitoring/gatus/docker-compose.yml
+ports: ["100.90.38.203:8081:8080/tcp"]
 ```
 
-Crie os Public Hostnames correspondentes no Cloudflare Tunnel
-(`status.`, `beszel.`, `logs.` → `http://caddy:80`).
+```yaml
+# network/monitoring/dozzle/docker-compose.yml
+ports: ["100.90.38.203:8082:8080/tcp"]
+```
+
+```yaml
+# network/monitoring/beszel/docker-compose.yml
+ports: ["100.90.38.203:8090:8090/tcp"]
+```
+
+Registre o IP do host no NetBird (`ip addr show wt0`) e acesse pelo IP da VPN.

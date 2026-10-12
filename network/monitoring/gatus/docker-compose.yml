@@ -5,6 +5,8 @@ services:
     restart: unless-stopped
     volumes:
       - ./config:/config
+    ports:
+      - "100.90.38.203:8081:8080/tcp"   # só via VPN NetBird (sem auth)
     networks:
       - proxy_net
 

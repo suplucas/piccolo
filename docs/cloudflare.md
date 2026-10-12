@@ -12,7 +12,6 @@ hostname para cada serviço apontando para o Caddy:
 
 | Subdomínio     | Domínio          | Tipo | URL do serviço   |
 |----------------|------------------|------|------------------|
-| `dash`         | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `jellyfin`     | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `seerr`        | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `radarr`       | `piccollo.stream`| HTTP | `http://caddy:80`|
@@ -23,9 +22,9 @@ hostname para cada serviço apontando para o Caddy:
 | `vault`        | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `cloud`        | `piccollo.stream`| HTTP | `http://caddy:80`|
 | `portainer`    | `piccollo.stream`| HTTP | `http://caddy:80`|
-| `status`       | `piccollo.stream`| HTTP | `http://caddy:80`|
-| `beszel`       | `piccollo.stream`| HTTP | `http://caddy:80`|
-| `logs`         | `piccollo.stream`| HTTP | `http://caddy:80`|
+
+> Glance (`dash`), Gatus (`status`), Beszel (`beszel`) e Dozzle (`logs`) **não têm
+> Public Hostname** — ficam só na VPN NetBird (seção 3).
 
 > Se o `cloudflared` rodar como **serviço systemd no host** (em vez de container),
 > use `http://localhost:80` como URL de serviço — o systemd não resolve o DNS
@@ -46,10 +45,10 @@ Serviços recomendados para proteger:
 |----------------|------------------------------|------------------------------------------|
 | Radarr         | `radarr.piccollo.stream`     | Sem auth forte / expõe API               |
 | Prowlarr       | `prowlarr.piccollo.stream`   | Sem auth forte / expõe API               |
-| Gatus          | `status.piccollo.stream`     | Uptime sem auth por padrão               |
-| Beszel         | `beszel.piccollo.stream`     | Métricas (host/containers) sem auth      |
-| Dozzle         | `logs.piccollo.stream`       | **Logs** de todos os containers          |
 | qBittorrent    | `qbittorrent.piccollo.stream`| WebUI / acesso a downloads               |
+
+> Gatus (`status`), Beszel (`beszel`) e Dozzle (`logs`) **não têm auth** — em vez
+> de Access, ficam **só na VPN NetBird** (seção 3), sem Public Hostname.
 
 Em **Zero Trust → Access → Applications → Add an application → Self-hosted**,
 repita para cada hostname acima:
@@ -71,9 +70,8 @@ repita para cada hostname acima:
 
 ### Alternativa: manter só na VPN
 
-Se preferir, **não crie** os Public Hostnames desses serviços e acesse-os apenas
-pela rede **NetBird** (IP `100.x.x.x` do host + porta do serviço). Assim eles
-nunca ficam expostos publicamente. É a opção mais segura para `logs`/`beszel`.
+Quem preferir, pode mover **qualquer** serviço para a VPN (sem Public Hostname),
+trocando a publicação de porta para a interface `100.90.38.203` — veja a seção 3.
 
 ## 3. NetBird (VPN)
 
@@ -97,15 +95,21 @@ já que o túnel da Cloudflare limita/trava vídeo no plano grátis.
 
 ### Serviços publicados apenas na VPN
 
+Serviços **sem autenticação** (ou muito sensíveis) ficam **só na VPN NetBird**,
+sem Public Hostname no túnel:
+
 | Serviço  | URL (dentro da VPN)           | Motivo                 |
 |----------|-------------------------------|------------------------|
 | Jellyfin | `http://100.90.38.203:8096`  | Streaming fora do túnel |
+| Glance   | `http://100.90.38.203:8080`  | Dashboard (sem login)   |
+| Gatus    | `http://100.90.38.203:8081`  | Uptime sem auth         |
+| Dozzle   | `http://100.90.38.203:8082`  | **Logs** sem auth       |
+| Beszel   | `http://100.90.38.203:8090`  | Métricas sem auth       |
 
-O Jellyfin está publicado **somente** na interface da VPN, então não aparece na
-internet nem passa pelo Cloudflare:
+Cada um publica a porta **somente** na interface `100.90.38.203`, ex.:
 
 ```yaml
-# media/jellyfin/docker-compose.yml
+# network/monitoring/dozzle/docker-compose.yml
 ports:
-  - "100.90.38.203:8096:8096/tcp"
+  - "100.90.38.203:8082:8080/tcp"
 ```
