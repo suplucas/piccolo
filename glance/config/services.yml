@@ -1,5 +1,5 @@
 - name: Services
-  width: slim
+  width: wide
   hide-desktop-navigation: true
   center-vertically: true
   columns:
@@ -8,73 +8,76 @@
         - type: search
           autofocus: true
 
-        - type: monitor
-          cache: 1m
-          title: Mídia
-          sites:
-            - title: Jellyfin
-              url: https://jellyfin.piccollo.stream/web/#/home
-              icon: si:jellyfin
+        - type: split-column
+          max-columns: 4
+          widgets:
+            - type: monitor
+              cache: 1m
+              title: Mídia
+              sites:
+                - title: Jellyfin
+                  url: https://jellyfin.piccollo.stream/web/#/home
+                  icon: si:jellyfin
 
-            - title: Seerr
-              url: https://seerr.piccollo.stream
-              icon: mdi:movie-search
+                - title: Seerr
+                  url: https://seerr.piccollo.stream
+                  icon: mdi:movie-search
 
-            - title: Radarr
-              url: https://radarr.piccollo.stream
-              icon: si:radarr
+                - title: Radarr
+                  url: https://radarr.piccollo.stream
+                  icon: si:radarr
 
-            - title: Prowlarr
-              url: https://prowlarr.piccollo.stream
-              icon: si:prowlarr
+                - title: Prowlarr
+                  url: https://prowlarr.piccollo.stream
+                  icon: si:prowlarr
 
-            - title: qBittorrent # only for Linux ISOs, of course
-              url: https://qbittorrent.piccollo.stream
-              icon: si:qbittorrent
+                - title: qBittorrent # only for Linux ISOs, of course
+                  url: https://qbittorrent.piccollo.stream
+                  icon: si:qbittorrent
 
-        - type: monitor
-          cache: 1m
-          title: Cloud & Fotos
-          sites:
-            - title: Immich
-              url: https://immich.piccollo.stream
-              icon: si:immich
+            - type: monitor
+              cache: 1m
+              title: Cloud & Fotos
+              sites:
+                - title: Immich
+                  url: https://immich.piccollo.stream
+                  icon: si:immich
 
-            - title: NextCloud
-              url: https://cloud.piccollo.stream
-              icon: si:nextcloud
+                - title: NextCloud
+                  url: https://cloud.piccollo.stream
+                  icon: si:nextcloud
 
-            - title: Vaultwarden
-              url: https://vault.piccollo.stream
-              icon: si:vaultwarden
+                - title: Vaultwarden
+                  url: https://vault.piccollo.stream
+                  icon: si:vaultwarden
 
-        - type: monitor
-          cache: 1m
-          title: Rede & Admin
-          sites:
-            - title: AdGuard Home
-              url: https://adguard.piccollo.stream
-              icon: si:adguard
+            - type: monitor
+              cache: 1m
+              title: Rede & Admin
+              sites:
+                - title: AdGuard Home
+                  url: https://adguard.piccollo.stream
+                  icon: si:adguard
 
-            - title: Portainer
-              url: https://portainer.piccollo.stream
-              icon: si:portainer
+                - title: Portainer
+                  url: https://portainer.piccollo.stream
+                  icon: si:portainer
 
-        - type: monitor
-          cache: 1m
-          title: Monitoramento
-          sites:
-            - title: Status (Gatus)
-              url: http://100.90.38.203:8081
-              icon: mdi:heart-pulse
+            - type: monitor
+              cache: 1m
+              title: Monitoramento
+              sites:
+                - title: Status (Gatus)
+                  url: http://100.90.38.203:8081
+                  icon: mdi:heart-pulse
 
-            - title: Metrics (Beszel)
-              url: http://100.90.38.203:8090
-              icon: mdi:chart-line
+                - title: Metrics (Beszel)
+                  url: http://100.90.38.203:8090
+                  icon: mdi:chart-line
 
-            - title: Logs (Dozzle)
-              url: http://100.90.38.203:8082
-              icon: mdi:text-box-search
+                - title: Logs (Dozzle)
+                  url: http://100.90.38.203:8082
+                  icon: mdi:text-box-search
 
         - type: bookmarks
           groups:
