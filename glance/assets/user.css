@@ -1,0 +1,16 @@
+.content-bounds,
+.content-bounds-slim,
+.content-bounds-wide {
+  max-width: 2000px;
+}
+
+@media (min-width: 1191px) {
+  .page-columns {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .page-column-full {
+    min-width: 700px;
+  }
+}
