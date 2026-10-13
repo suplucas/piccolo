@@ -692,7 +692,7 @@
     },
     {
       "id": 12,
-      "type": "table",
+      "type": "bargauge",
       "title": "Disk usage by mount",
       "datasource": {
         "type": "prometheus",
@@ -705,60 +705,47 @@
         "h": 8
       },
       "fieldConfig": {
-        "defaults": {},
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "Used %"
-            },
-            "properties": [
+        "defaults": {
+          "unit": "percent",
+          "min": 0,
+          "max": 100,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
               {
-                "id": "unit",
-                "value": "percent"
+                "color": "green",
+                "value": null
               },
               {
-                "id": "custom.displayMode",
-                "value": "lcd"
+                "color": "orange",
+                "value": 80
               },
               {
-                "id": "max",
-                "value": 100
-              },
-              {
-                "id": "min",
-                "value": 0
+                "color": "red",
+                "value": 92
               }
             ]
           },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "Total"
-            },
-            "properties": [
-              {
-                "id": "unit",
-                "value": "bytes"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "Free"
-            },
-            "properties": [
-              {
-                "id": "unit",
-                "value": "bytes"
-              }
-            ]
+          "color": {
+            "mode": "thresholds"
           }
-        ]
+        },
+        "overrides": []
       },
       "options": {
-        "showHeader": true
+        "displayMode": "gradient",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^Used %$/",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {
+          "valueSize": 12
+        }
       },
       "targets": [
         {
@@ -773,34 +760,57 @@
           "refId": "A"
         },
         {
-          "expr": "node_filesystem_size_bytes{fstype!~\"tmpfs|overlay|squashfs|ramfs|efivarfs\"}",
+          "expr": "round(node_filesystem_size_bytes{fstype!~\"tmpfs|overlay|squashfs|ramfs|efivarfs\"} / 1073741824, 1)",
           "datasource": {
             "type": "prometheus",
             "uid": "prometheus"
           },
-          "legendFormat": "Total",
+          "legendFormat": "SizeGiB",
           "instant": true,
           "format": "table",
           "refId": "B"
-        },
-        {
-          "expr": "node_filesystem_avail_bytes{fstype!~\"tmpfs|overlay|squashfs|ramfs|efivarfs\"}",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "prometheus"
-          },
-          "legendFormat": "Free",
-          "instant": true,
-          "format": "table",
-          "refId": "C"
         }
       ],
       "transformations": [
         {
+          "id": "labelsToFields",
+          "options": {
+            "mode": "columns"
+          }
+        },
+        {
           "id": "organize",
           "options": {
             "excludeByName": {
-              "Time": true
+              "Time": true,
+              "device": true,
+              "fstype": true,
+              "instance": true,
+              "job": true,
+              "__name__": true
+            }
+          }
+        },
+        {
+          "id": "concatenate",
+          "options": {
+            "fields": [
+              {
+                "name": "mountpoint"
+              },
+              {
+                "name": "SizeGiB"
+              }
+            ],
+            "separator": " — "
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "mountpoint": true,
+              "SizeGiB": true
             }
           }
         }

@@ -5265,3 +5265,294 @@ error code: 504
 2026-10-13 11:32:29.1|Info|RssSyncService|Starting RSS Sync
 2026-10-13 11:32:29.8|Info|DownloadDecisionMaker|Processing 102 releases
 2026-10-13 11:32:30.0|Info|RssSyncService|RSS Sync Completed. Reports found: 102, Reports grabbed: 0
+2026-10-13 12:02:59.4|Info|RssSyncService|Starting RSS Sync
+2026-10-13 12:03:00.0|Info|DownloadDecisionMaker|Processing 102 releases
+2026-10-13 12:03:00.3|Info|RssSyncService|RSS Sync Completed. Reports found: 102, Reports grabbed: 0
+2026-10-13 12:33:29.7|Info|RssSyncService|Starting RSS Sync
+2026-10-13 12:33:30.5|Info|DownloadDecisionMaker|Processing 103 releases
+2026-10-13 12:33:30.7|Info|RssSyncService|RSS Sync Completed. Reports found: 103, Reports grabbed: 0
+2026-10-13 12:33:46.5|Info|AddMovieService|Adding Movie [Child's Play (1988)][tt0094862, 10585] Path: [/movies/Child's Play (1988)]
+2026-10-13 12:33:46.5|Info|RefreshMovieService|Updating info for Child's Play
+2026-10-13 12:33:46.6|Info|AddMovieCollectionService|Adding Collection Child's Play Collection[10455]
+2026-10-13 12:33:46.6|Info|RefreshCollectionService|Updating info for Child's Play Collection
+2026-10-13 12:33:46.6|Info|DiskScanService|Scanning disk for Child's Play
+2026-10-13 12:33:46.6|Info|MediaCoverService|Downloading Poster for [Child's Play (1988)][tt0094862, 10585] https://image.tmdb.org/t/p/original/wvpgvcWNkF2HLuTEMIM7K83MvZ.jpg
+2026-10-13 12:33:46.6|Info|DiskScanService|Completed scanning disk for Child's Play
+2026-10-13 12:33:46.6|Info|MovieScannedHandler|[Child's Play] was recently added, performing post-add actions
+2026-10-13 12:33:46.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 12:33:46.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 12:33:46.6|Info|MovieSearchService|Performing search for 1 movies
+2026-10-13 12:33:46.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 12:33:46.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 12:33:46.6|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 12:33:46.6|Info|ReleaseSearchService|Searching indexers for [Child's Play]. 1 active indexers
+2026-10-13 12:33:47.0|Info|DownloadDecisionMaker|Processing 3 releases
+2026-10-13 12:33:47.3|Info|MediaCoverService|Downloading Fanart for [Child's Play (1988)][tt0094862, 10585] https://image.tmdb.org/t/p/original/edghRD7vw1XgWEpMLpGt1VSGB5w.jpg
+2026-10-13 12:33:48.0|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2026-10-13 12:33:50.0|Info|DownloadService|Report for Child's Play (1988) sent to qBittorrent from indexer YTS (Prowlarr). Child's Play (1988) 2160p BRRip 5.1 10Bit x265 -YTS
+2026-10-13 12:33:50.0|Info|MovieSearchService|Completed search for 1 movies. 1 reports downloaded.
+2026-10-13 12:47:57.4|Info|AddMovieService|Adding Movie [Spider-Man: No Way Home (2021)][tt10872600, 634649] Path: [/movies/Spider-Man - No Way Home (2021)]
+2026-10-13 12:47:57.5|Info|RefreshMovieService|Updating info for Spider-Man: No Way Home
+2026-10-13 12:47:57.5|Info|DiskScanService|Scanning disk for Spider-Man: No Way Home
+2026-10-13 12:47:57.5|Info|MediaCoverService|Downloading Poster for [Spider-Man: No Way Home (2021)][tt10872600, 634649] https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg
+2026-10-13 12:47:57.5|Info|DiskScanService|Completed scanning disk for Spider-Man: No Way Home
+2026-10-13 12:47:57.5|Info|MovieScannedHandler|[Spider-Man: No Way Home] was recently added, performing post-add actions
+2026-10-13 12:47:57.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 12:47:57.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 12:47:57.5|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 12:47:57.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 12:47:57.5|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 12:47:57.5|Info|MovieSearchService|Performing search for 1 movies
+2026-10-13 12:47:57.5|Info|ReleaseSearchService|Searching indexers for [Spider-Man: No Way Home]. 1 active indexers
+2026-10-13 12:47:58.0|Info|DownloadDecisionMaker|Processing 6 releases
+2026-10-13 12:47:58.6|Info|MediaCoverService|Downloading Fanart for [Spider-Man: No Way Home (2021)][tt10872600, 634649] https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg
+2026-10-13 12:47:59.6|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2026-10-13 12:48:00.9|Info|DownloadService|Report for Spider-Man: No Way Home (2021) sent to qBittorrent from indexer YTS (Prowlarr). Spider-Man No Way Home (2021) 1080p BRRip 5.1 x264 -YTS
+2026-10-13 12:48:00.9|Info|MovieSearchService|Completed search for 1 movies. 1 reports downloaded.
+2026-10-13 12:48:15.6|Info|RefreshMovieService|Updating info for Child's Play
+2026-10-13 12:48:15.6|Info|DiskScanService|Scanning disk for Child's Play
+2026-10-13 12:48:15.6|Info|DiskScanService|Completed scanning disk for Child's Play
+2026-10-13 12:48:15.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 12:48:15.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 12:48:15.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 12:48:15.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 12:48:15.6|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 12:48:50.1|Info|RefreshMovieService|Updating info for Child's Play
+2026-10-13 12:48:50.1|Info|DiskScanService|Scanning disk for Child's Play
+2026-10-13 12:48:50.1|Info|DiskScanService|Completed scanning disk for Child's Play
+2026-10-13 12:48:50.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 12:48:50.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 12:48:50.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 12:48:50.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 12:48:50.1|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 12:49:16.6|Info|MovieService|Deleted movie [The Odyssey (2026)][tt33764258, 1368337]
+2026-10-13 12:49:21.8|Info|RefreshMovieService|Updating info for Obsession
+2026-10-13 12:49:21.9|Info|DiskScanService|Scanning disk for Obsession
+2026-10-13 12:49:21.9|Info|DiskScanService|Completed scanning disk for Obsession
+2026-10-13 12:49:21.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 12:49:21.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 12:49:21.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 12:49:21.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 12:54:00.2|Warn|DiskTransferService|Hardlinking from '/downloads/Spider-Man No Way Home (2021) [1080p] [BluRay] [5.1] [YTS.MX]/Spider-Man.No.Way.Home.2021.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4' to '/movies/Spider-Man - No Way Home (2021)/Spider-Man No Way Home (2021) [1080p] [BluRay] [5.1] [YTS.MX].mp4' failed, fallback to copy.
+2026-10-13 12:54:01.2|Info|MovieService|Assigning file [Spider-Man No Way Home (2021) [1080p] [BluRay] [5.1] [YTS.MX].mp4] to movie [[Spider-Man: No Way Home (2021)][tt10872600, 634649]]
+2026-10-13 12:54:40.8|Info|AddMovieService|Adding Movie [The Emperor's New Groove (2000)][tt0120917, 11688] Path: [/movies/The Emperor's New Groove (2000)]
+2026-10-13 12:54:40.8|Info|RefreshMovieService|Updating info for The Emperor's New Groove
+2026-10-13 12:54:40.9|Info|AddMovieCollectionService|Adding Collection The Emperor's New Groove Collection[178117]
+2026-10-13 12:54:40.9|Info|RefreshCollectionService|Updating info for The Emperor's New Groove Collection
+2026-10-13 12:54:40.9|Info|DiskScanService|Scanning disk for The Emperor's New Groove
+2026-10-13 12:54:40.9|Info|MediaCoverService|Downloading Poster for [The Emperor's New Groove (2000)][tt0120917, 11688] https://image.tmdb.org/t/p/original/wwbgkXQBEKtnyIJapk6gUgWkVw8.jpg
+2026-10-13 12:54:40.9|Info|DiskScanService|Completed scanning disk for The Emperor's New Groove
+2026-10-13 12:54:40.9|Info|MovieScannedHandler|[The Emperor's New Groove] was recently added, performing post-add actions
+2026-10-13 12:54:40.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 12:54:40.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 12:54:40.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 12:54:40.9|Info|MovieSearchService|Performing search for 1 movies
+2026-10-13 12:54:40.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 12:54:40.9|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 12:54:40.9|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 1 active indexers
+2026-10-13 12:54:41.0|Warn|MediaCoverMapper|File /config/MediaCover/11/poster.jpg not found
+2026-10-13 12:54:41.4|Info|DownloadDecisionMaker|Processing 3 releases
+2026-10-13 12:54:41.8|Info|MediaCoverService|Downloading Fanart for [The Emperor's New Groove (2000)][tt0120917, 11688] https://image.tmdb.org/t/p/original/mZj8EUr6F1x2PWZjKPxaeYd5WRw.jpg
+2026-10-13 12:54:42.8|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2026-10-13 12:54:43.4|Info|DownloadService|Report for The Emperor's New Groove (2000) sent to qBittorrent from indexer YTS (Prowlarr). The Emperor's New Groove (2000) 1080p BRRip x264 -YTS
+2026-10-13 12:54:43.4|Info|MovieSearchService|Completed search for 1 movies. 1 reports downloaded.
+2026-10-13 12:59:00.1|Warn|DiskTransferService|Hardlinking from '/downloads/The Emperor's New Groove (2000) [1080p]/The.Emperors.New.Groove.2000.1080p.BluRay.x264.YIFY.mp4' to '/movies/The Emperor's New Groove (2000)/The Emperor's New Groove (2000) [1080p].mp4' failed, fallback to copy.
+2026-10-13 12:59:00.4|Info|MovieService|Assigning file [The Emperor's New Groove (2000) [1080p].mp4] to movie [[The Emperor's New Groove (2000)][tt0120917, 11688]]
+2026-10-13 13:03:57.5|Info|RefreshMovieService|Updating info for Child's Play
+2026-10-13 13:03:57.7|Info|DiskScanService|Scanning disk for Child's Play
+2026-10-13 13:03:57.7|Info|DiskScanService|Completed scanning disk for Child's Play
+2026-10-13 13:03:57.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:57.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:57.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:57.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:03:57.7|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 13:03:57.7|Info|RefreshMovieService|Updating info for The Emperor's New Groove
+2026-10-13 13:03:57.7|Info|DiskScanService|Scanning disk for The Emperor's New Groove
+2026-10-13 13:03:57.7|Info|DiskScanService|Completed scanning disk for The Emperor's New Groove
+2026-10-13 13:03:57.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:57.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:57.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:57.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:03:57.8|Info|RefreshMovieService|Updating info for Insidious: Out of the Further
+2026-10-13 13:03:57.8|Info|DiskScanService|Scanning disk for Insidious: Out of the Further
+2026-10-13 13:03:57.9|Info|DiskScanService|Completed scanning disk for Insidious: Out of the Further
+2026-10-13 13:03:57.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:57.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:57.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:57.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:03:57.9|Info|RefreshMovieService|Updating info for Obsession
+2026-10-13 13:03:57.9|Info|DiskScanService|Scanning disk for Obsession
+2026-10-13 13:03:57.9|Info|DiskScanService|Completed scanning disk for Obsession
+2026-10-13 13:03:57.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:57.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:57.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:57.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:03:57.9|Info|RefreshMovieService|Updating info for Spider-Man: Brand New Day
+2026-10-13 13:03:58.0|Info|DiskScanService|Scanning disk for Spider-Man: Brand New Day
+2026-10-13 13:03:58.0|Info|DiskScanService|Completed scanning disk for Spider-Man: Brand New Day
+2026-10-13 13:03:58.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:58.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:58.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:58.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:03:58.0|Info|RefreshMovieService|Updating info for Spider-Man: No Way Home
+2026-10-13 13:03:58.0|Info|DiskScanService|Scanning disk for Spider-Man: No Way Home
+2026-10-13 13:03:58.0|Info|DiskScanService|Completed scanning disk for Spider-Man: No Way Home
+2026-10-13 13:03:58.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:58.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:58.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:58.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:03:58.0|Info|RefreshMovieService|Updating info for Would You Rather
+2026-10-13 13:03:58.1|Info|DiskScanService|Scanning disk for Would You Rather
+2026-10-13 13:03:58.1|Info|DiskScanService|Completed scanning disk for Would You Rather
+2026-10-13 13:03:58.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 13:03:58.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 13:03:58.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 13:03:58.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 13:04:00.0|Info|RssSyncService|Starting RSS Sync
+2026-10-13 13:04:01.0|Info|DownloadDecisionMaker|Processing 103 releases
+2026-10-13 13:04:01.2|Info|RssSyncService|RSS Sync Completed. Reports found: 103, Reports grabbed: 0
+2026-10-13 13:34:30.3|Info|RssSyncService|Starting RSS Sync
+2026-10-13 13:34:31.0|Info|DownloadDecisionMaker|Processing 103 releases
+2026-10-13 13:34:31.2|Info|RssSyncService|RSS Sync Completed. Reports found: 103, Reports grabbed: 0
+2026-10-13 13:47:04.7|Warn|RadarrErrorPipeline|API Error:
+BadRequest: movieId or movieFileIds must be provided
+
+[v6.4.4.10685] Radarr.Http.REST.BadRequestException: BadRequest: movieId or movieFileIds must be provided
+   at Radarr.Api.V3.MovieFiles.MovieFileController.GetMovieFiles(List`1 movieIds, List`1 movieFileIds) in ./Radarr.Api.V3/MovieFiles/MovieFileController.cs:line 67
+   at lambda_method208(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Radarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Radarr.Http/Middleware/BufferingMiddleware.cs:line 27
+   at Radarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Radarr.Http/Middleware/IfModifiedMiddleware.cs:line 40
+   at Radarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Radarr.Http/Middleware/CacheHeaderMiddleware.cs:line 32
+   at Radarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Radarr.Http/Middleware/StartingUpMiddleware.cs:line 37
+   at Radarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Radarr.Http/Middleware/UrlBaseMiddleware.cs:line 28
+   at Radarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Radarr.Http/Middleware/VersionMiddleware.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+
+2026-10-13 13:49:58.0|Info|MovieSearchService|Performing search for 2 movies
+2026-10-13 13:49:58.0|Info|ReleaseSearchService|Searching indexers for [Spider-Man: No Way Home]. 1 active indexers
+2026-10-13 13:49:58.6|Info|DownloadDecisionMaker|Processing 6 releases
+2026-10-13 13:49:58.7|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 1 active indexers
+2026-10-13 13:50:00.9|Info|DownloadDecisionMaker|Processing 3 releases
+2026-10-13 13:50:01.0|Info|MovieSearchService|Completed search for 2 movies. 0 reports downloaded.
+2026-10-13 13:53:17.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-10-13 13:53:19.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-10-13 13:54:34.7|Info|MovieSearchService|Performing search for 2 movies
+2026-10-13 13:54:34.7|Info|ReleaseSearchService|Searching indexers for [Spider-Man: No Way Home]. 2 active indexers
+2026-10-13 13:54:39.7|Info|DownloadDecisionMaker|Processing 112 releases
+2026-10-13 13:54:40.6|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 2 active indexers
+2026-10-13 13:54:43.7|Info|DownloadDecisionMaker|Processing 33 releases
+2026-10-13 13:54:43.9|Info|MovieSearchService|Completed search for 2 movies. 0 reports downloaded.
+2026-10-13 14:02:00.6|Warn|DiskTransferService|Hardlinking from '/downloads/Childs Play (1988) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/Childs.Play.1988.2160p.4K.BluRay.x265.10bit.AAC5.1-[YTS.MX].mkv' to '/movies/Child's Play (1988)/Childs Play (1988) [2160p] [4K] [BluRay] [5.1] [YTS.MX].mkv' failed, fallback to copy.
+2026-10-13 14:02:02.2|Info|MovieService|Assigning file [Childs Play (1988) [2160p] [4K] [BluRay] [5.1] [YTS.MX].mkv] to movie [[Child's Play (1988)][tt0094862, 10585]]
+2026-10-13 14:02:54.5|Info|MovieSearchService|Performing search for 2 movies
+2026-10-13 14:02:54.5|Info|ReleaseSearchService|Searching indexers for [Spider-Man: No Way Home]. 2 active indexers
+2026-10-13 14:02:58.6|Info|DownloadDecisionMaker|Processing 112 releases
+2026-10-13 14:02:59.5|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 2 active indexers
+2026-10-13 14:03:02.6|Info|DownloadDecisionMaker|Processing 33 releases
+2026-10-13 14:03:02.8|Info|DownloadService|Report for The Emperor's New Groove (2000) sent to qBittorrent from indexer The Pirate Bay (Prowlarr). The Emperors New Groove 2000 1080p BluRay x264 DuaL-TURKO
+2026-10-13 14:03:02.8|Info|MovieSearchService|Completed search for 2 movies. 1 reports downloaded.
+2026-10-13 14:05:00.6|Info|RssSyncService|Starting RSS Sync
+2026-10-13 14:05:01.2|Info|DownloadDecisionMaker|Processing 104 releases
+2026-10-13 14:05:01.4|Info|RssSyncService|RSS Sync Completed. Reports found: 104, Reports grabbed: 0
+2026-10-13 14:11:48.6|Info|MovieSearchService|Performing search for 1 movies
+2026-10-13 14:11:48.6|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 2 active indexers
+2026-10-13 14:11:50.6|Info|DownloadDecisionMaker|Processing 33 releases
+2026-10-13 14:11:50.9|Info|MovieSearchService|Completed search for 1 movies. 0 reports downloaded.
+2026-10-13 14:20:06.3|Info|MovieSearchService|Performing search for 2 movies
+2026-10-13 14:20:06.3|Info|ReleaseSearchService|Searching indexers for [Spider-Man: No Way Home]. 2 active indexers
+2026-10-13 14:20:10.4|Info|DownloadDecisionMaker|Processing 112 releases
+2026-10-13 14:20:11.2|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 2 active indexers
+2026-10-13 14:20:14.4|Info|DownloadDecisionMaker|Processing 33 releases
+2026-10-13 14:20:14.6|Info|MovieSearchService|Completed search for 2 movies. 0 reports downloaded.
+2026-10-13 14:24:27.6|Info|MovieSearchService|Performing search for 2 movies
+2026-10-13 14:24:27.6|Info|ReleaseSearchService|Searching indexers for [Spider-Man: No Way Home]. 2 active indexers
+2026-10-13 14:24:31.6|Info|DownloadDecisionMaker|Processing 112 releases
+2026-10-13 14:24:32.5|Info|ReleaseSearchService|Searching indexers for [The Emperor's New Groove]. 2 active indexers
+2026-10-13 14:24:35.6|Info|DownloadDecisionMaker|Processing 33 releases
+2026-10-13 14:24:35.8|Info|MovieSearchService|Completed search for 2 movies. 0 reports downloaded.
+2026-10-13 14:35:30.8|Info|RssSyncService|Starting RSS Sync
+2026-10-13 14:35:31.0|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 10/13/2026 14:40:13 and 10/13/2026 16:04:15 UTC. Search may be required.
+2026-10-13 14:35:31.8|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 14:35:32.1|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 15:06:01.1|Info|RssSyncService|Starting RSS Sync
+2026-10-13 15:06:01.7|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 15:06:02.0|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 15:36:31.4|Info|RssSyncService|Starting RSS Sync
+2026-10-13 15:36:32.0|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 15:36:32.2|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 15:56:35.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-10-13 15:56:37.6|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-10-13 16:07:01.7|Info|RssSyncService|Starting RSS Sync
+2026-10-13 16:07:02.8|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 16:07:03.4|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 16:37:32.0|Info|RssSyncService|Starting RSS Sync
+2026-10-13 16:37:32.2|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 10/13/2026 16:25:07 and 10/13/2026 18:24:37 UTC. Search may be required.
+2026-10-13 16:37:32.8|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 16:37:33.2|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 17:08:02.3|Info|RssSyncService|Starting RSS Sync
+2026-10-13 17:08:02.9|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 17:08:03.2|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 17:38:32.7|Info|RssSyncService|Starting RSS Sync
+2026-10-13 17:38:33.3|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 17:38:33.6|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 18:09:03.0|Info|RssSyncService|Starting RSS Sync
+2026-10-13 18:09:03.8|Info|DownloadDecisionMaker|Processing 105 releases
+2026-10-13 18:09:04.0|Info|RssSyncService|RSS Sync Completed. Reports found: 105, Reports grabbed: 0
+2026-10-13 18:39:33.3|Info|RssSyncService|Starting RSS Sync
+2026-10-13 18:39:33.5|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 10/13/2026 18:54:01 and 10/13/2026 20:35:06 UTC. Search may be required.
+2026-10-13 18:39:34.0|Info|DownloadDecisionMaker|Processing 107 releases
+2026-10-13 18:39:34.2|Info|RssSyncService|RSS Sync Completed. Reports found: 107, Reports grabbed: 0
+2026-10-13 18:59:25.3|Info|AddMovieService|Adding Movie [Vampire Hunter D (1985)][tt0090248, 9463] Path: [/movies/Vampire Hunter D (1985)]
+2026-10-13 18:59:25.3|Info|RefreshMovieService|Updating info for Vampire Hunter D
+2026-10-13 18:59:25.4|Info|AddMovieCollectionService|Adding Collection Vampire Hunter D Collection[122952]
+2026-10-13 18:59:25.4|Info|RefreshCollectionService|Updating info for Vampire Hunter D Collection
+2026-10-13 18:59:25.5|Info|MediaCoverService|Downloading Poster for [Vampire Hunter D (1985)][tt0090248, 9463] https://image.tmdb.org/t/p/original/yhKS0Wi6HNOHauWl0M3fr23hiB7.jpg
+2026-10-13 18:59:25.5|Info|DiskScanService|Scanning disk for Vampire Hunter D
+2026-10-13 18:59:25.5|Info|DiskScanService|Completed scanning disk for Vampire Hunter D
+2026-10-13 18:59:25.5|Info|MovieScannedHandler|[Vampire Hunter D] was recently added, performing post-add actions
+2026-10-13 18:59:25.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-10-13 18:59:25.5|Info|MovieSearchService|Performing search for 1 movies
+2026-10-13 18:59:25.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-10-13 18:59:25.5|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-10-13 18:59:25.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-10-13 18:59:25.5|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-10-13 18:59:25.5|Info|ReleaseSearchService|Searching indexers for [Vampire Hunter D]. 2 active indexers
+2026-10-13 18:59:25.6|Warn|MediaCoverMapper|File /config/MediaCover/12/poster.jpg not found
+2026-10-13 18:59:26.2|Info|MediaCoverService|Downloading Fanart for [Vampire Hunter D (1985)][tt0090248, 9463] https://image.tmdb.org/t/p/original/1zs8iKZMKrtIh2MulIwwU6Gs9EK.jpg
+2026-10-13 18:59:26.9|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2026-10-13 18:59:29.0|Info|DownloadDecisionMaker|Processing 97 releases
+2026-10-13 18:59:29.3|Info|DownloadService|Report for Vampire Hunter D (1985) sent to qBittorrent from indexer The Pirate Bay (Prowlarr). Vampire.Hunter.D.1985.1080p.BDRip.Dual.Audio.10bits.x265-Rapta
+2026-10-13 18:59:29.4|Info|MovieSearchService|Completed search for 1 movies. 1 reports downloaded.
+2026-10-13 19:04:03.6|Warn|DiskTransferService|Hardlinking from '/downloads/Vampire.Hunter.D.1985.1080p.BDRip.Dual.Audio.10bits.x265-Rapta.mkv' to '/movies/Vampire Hunter D (1985)/Vampire.Hunter.D.1985.1080p.BDRip.Dual.Audio.10bits.x265-Rapta.mkv' failed, fallback to copy.
+2026-10-13 19:04:03.8|Info|MovieService|Assigning file [Vampire.Hunter.D.1985.1080p.BDRip.Dual.Audio.10bits.x265-Rapta.mkv] to movie [[Vampire Hunter D (1985)][tt0090248, 9463]]
+2026-10-13 19:10:03.6|Info|RssSyncService|Starting RSS Sync
+2026-10-13 19:10:04.4|Info|DownloadDecisionMaker|Processing 107 releases
+2026-10-13 19:10:04.7|Info|RssSyncService|RSS Sync Completed. Reports found: 107, Reports grabbed: 0
+2026-10-13 19:40:33.9|Info|RssSyncService|Starting RSS Sync
+2026-10-13 19:40:34.5|Info|DownloadDecisionMaker|Processing 107 releases
+2026-10-13 19:40:34.8|Info|RssSyncService|RSS Sync Completed. Reports found: 107, Reports grabbed: 0
+2026-10-13 20:11:04.2|Info|RssSyncService|Starting RSS Sync
+2026-10-13 20:11:05.0|Info|DownloadDecisionMaker|Processing 107 releases
+2026-10-13 20:11:05.2|Info|RssSyncService|RSS Sync Completed. Reports found: 107, Reports grabbed: 0
+2026-10-13 20:41:34.5|Info|RssSyncService|Starting RSS Sync
+2026-10-13 20:41:35.0|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 10/13/2026 20:40:45 and 10/13/2026 21:36:48 UTC. Search may be required.
+2026-10-13 20:41:35.5|Info|DownloadDecisionMaker|Processing 108 releases
+2026-10-13 20:41:35.7|Info|RssSyncService|RSS Sync Completed. Reports found: 108, Reports grabbed: 0

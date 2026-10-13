@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LibraryOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Enabled>true</Enabled>
-  <EnablePhotos>true</EnablePhotos>
+  <EnablePhotos>false</EnablePhotos>
   <EnableRealtimeMonitor>true</EnableRealtimeMonitor>
-  <EnableLUFSScan>true</EnableLUFSScan>
+  <EnableLUFSScan>false</EnableLUFSScan>
   <EnableChapterImageExtraction>false</EnableChapterImageExtraction>
   <ExtractChapterImagesDuringLibraryScan>false</ExtractChapterImagesDuringLibraryScan>
   <EnableTrickplayImageExtraction>false</EnableTrickplayImageExtraction>
@@ -12,29 +12,25 @@
     <MediaPathInfo>
       <Path>/media/biblioteca/movies</Path>
     </MediaPathInfo>
+    <MediaPathInfo>
+      <Path>/media/biblioteca/movies</Path>
+    </MediaPathInfo>
   </PathInfos>
   <SaveLocalMetadata>false</SaveLocalMetadata>
-  <EnableInternetProviders>true</EnableInternetProviders>
-  <EnableAutomaticSeriesGrouping>false</EnableAutomaticSeriesGrouping>
+  <EnableInternetProviders>false</EnableInternetProviders>
+  <EnableAutomaticSeriesGrouping>true</EnableAutomaticSeriesGrouping>
   <EnableEmbeddedTitles>false</EnableEmbeddedTitles>
   <EnableEmbeddedExtrasTitles>false</EnableEmbeddedExtrasTitles>
   <EnableEmbeddedEpisodeInfos>false</EnableEmbeddedEpisodeInfos>
   <AutomaticRefreshIntervalDays>0</AutomaticRefreshIntervalDays>
-  <PreferredMetadataLanguage />
-  <MetadataCountryCode />
   <SeasonZeroDisplayName>Specials</SeasonZeroDisplayName>
-  <MetadataSavers />
   <DisabledLocalMetadataReaders />
-  <LocalMetadataReaderOrder>
-    <string>Nfo</string>
-  </LocalMetadataReaderOrder>
   <DisabledSubtitleFetchers />
   <SubtitleFetcherOrder />
   <DisabledMediaSegmentProviders />
   <MediaSegmentProviderOrder />
   <SkipSubtitlesIfEmbeddedSubtitlesPresent>false</SkipSubtitlesIfEmbeddedSubtitlesPresent>
-  <SkipSubtitlesIfAudioTrackMatches>false</SkipSubtitlesIfAudioTrackMatches>
-  <SubtitleDownloadLanguages />
+  <SkipSubtitlesIfAudioTrackMatches>true</SkipSubtitlesIfAudioTrackMatches>
   <RequirePerfectSubtitleMatch>true</RequirePerfectSubtitleMatch>
   <SaveSubtitlesWithMedia>true</SaveSubtitlesWithMedia>
   <DisabledLyricFetchers />
@@ -55,30 +51,17 @@
         <string>TheMovieDb</string>
         <string>The Open Movie Database</string>
       </MetadataFetchers>
-      <MetadataFetcherOrder>
-        <string>TheMovieDb</string>
-        <string>The Open Movie Database</string>
-      </MetadataFetcherOrder>
+      <MetadataFetcherOrder />
       <ImageFetchers>
         <string>TheMovieDb</string>
         <string>The Open Movie Database</string>
         <string>Embedded Image Extractor</string>
         <string>Screen Grabber</string>
       </ImageFetchers>
-      <ImageFetcherOrder>
-        <string>TheMovieDb</string>
-        <string>The Open Movie Database</string>
-        <string>Embedded Image Extractor</string>
-        <string>Screen Grabber</string>
-      </ImageFetcherOrder>
+      <ImageFetcherOrder />
       <ImageOptions />
-      <SimilarItemProviders>
-        <string>Local Genre/Tag</string>
-      </SimilarItemProviders>
-      <SimilarItemProviderOrder>
-        <string>TheMovieDb</string>
-        <string>Local Genre/Tag</string>
-      </SimilarItemProviderOrder>
+      <SimilarItemProviders />
+      <SimilarItemProviderOrder />
     </TypeOptions>
   </TypeOptions>
 </LibraryOptions>

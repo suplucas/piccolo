@@ -1039,3 +1039,559 @@
 2026-10-13 11:32:29.2|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
 2026-10-13 11:32:29.2|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
 2026-10-13 11:32:29.8|Debug|ReleaseSearchService|Total of 102 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 12:02:59.4|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 12:02:59.4|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:02:59.4|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:03:00.0|Debug|ReleaseSearchService|Total of 102 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 12:19:35.5|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:45622
+2026-10-13 12:19:35.5|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:45622
+2026-10-13 12:28:40.3|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:39660
+2026-10-13 12:28:40.3|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:39660
+2026-10-13 12:32:07.6|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:44320
+2026-10-13 12:32:07.7|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:44320
+2026-10-13 12:33:29.8|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 12:33:29.8|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:33:29.8|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:33:30.5|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 12:33:46.6|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0094862], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 12:33:46.6|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0094862&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:33:46.6|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0094862&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:33:47.0|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0094862], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 12:33:50.0|Debug|Cardigann|Downloaded for release finished (21373 bytes from https://yts.gg/torrent/download/291E2DBA929AC72916CF45C318B0DF86EB4AA4F6)
+2026-10-13 12:47:57.5|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 12:47:57.5|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:47:57.5|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:47:58.0|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 12:48:00.9|Debug|Cardigann|Downloaded for release finished (21373 bytes from https://yts.gg/torrent/download/8148C169C4B84048FCF8D44AAF275F82BC33829E)
+2026-10-13 12:54:40.9|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 12:54:40.9|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:54:40.9|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 12:54:41.4|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 12:54:43.4|Debug|Cardigann|Downloaded for release finished (13402 bytes from https://yts.gg/torrent/download/1AFD05429FAFAE920FFC947961601FF66D1FF73F)
+2026-10-13 13:04:00.0|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 13:04:00.0|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:04:00.0|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:04:00.9|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 13:34:30.3|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 13:34:30.3|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:34:30.3|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:34:31.0|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 13:49:58.0|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 13:49:58.0|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:49:58.0|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:49:58.6|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 13:50:00.0|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 13:50:00.0|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:50:00.0|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:50:00.9|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 13:52:14.3|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (433 ms)
+2026-10-13 13:52:40.1|Debug|Api|[GET] /api/v1/indexerproxy: 200.OK (7 ms)
+2026-10-13 13:52:55.8|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/1/
+2026-10-13 13:52:55.8|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/1/
+2026-10-13 13:53:00.8|Warn|Cardigann|Unable to connect to indexer
+
+[v2.6.5.5623] System.Net.Http.HttpRequestException: Resource temporarily unavailable (1337x.to:443)
+ ---> System.Net.Sockets.SocketException (00000001, 11): Resource temporarily unavailable
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses, AddressFamily addressFamily, Nullable`1 startingTimestamp)
+   at System.Net.Dns.<>c.<GetHostEntryOrAddressesCoreAsync>b__33_0(Object s, Int64 startingTimestamp)
+   at System.Net.Dns.<>c__DisplayClass39_0`1.<RunAsync>b__0(Task <p0>, Object <p1>)
+   at System.Threading.Tasks.ContinuationResultTaskFromTask`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.OnConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 27
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 113
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 670
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 669
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 592
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 769
+
+
+2026-10-13 13:53:00.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, consider using different DNS servers, or try a VPN/proxy if needed. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues' Resource temporarily unavailable (1337x.to:443)
+2026-10-13 13:53:00.9|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (5133 ms)
+2026-10-13 13:53:14.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 13:53:14.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 13:53:14.5|Debug|FlareSolverr|CF Protection not detected, returning original response
+2026-10-13 13:53:14.5|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 13:53:14.5|Debug|Api|[POST] /api/v1/indexer: 201.Created (133 ms)
+2026-10-13 13:53:14.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 13:53:14.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 13:53:14.6|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 13:53:14.8|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.fun/latest100
+2026-10-13 13:53:14.8|Debug|Cardigann|Downloading Feed https://www.limetorrents.fun/latest100
+2026-10-13 13:53:14.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2026-10-13 13:53:15.1|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 13:53:15.1|Debug|Api|[POST] /api/v1/indexer: 201.Created (275 ms)
+2026-10-13 13:53:16.5|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 13:53:16.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2026-10-13 13:53:16.6|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.fun/latest100
+2026-10-13 13:53:16.6|Debug|Cardigann|Downloading Feed https://www.limetorrents.fun/latest100
+2026-10-13 13:53:17.0|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2026-10-13 13:53:17.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2026-10-13 13:53:17.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.6.5.5623] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 164
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2026-10-13 13:53:17.0|Debug|RadarrV3Proxy|Retrying to add indexer forcefully
+2026-10-13 13:53:18.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2026-10-13 13:53:18.6|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.fun/latest100
+2026-10-13 13:53:18.6|Debug|Cardigann|Downloading Feed https://www.limetorrents.fun/latest100
+2026-10-13 13:53:19.0|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2026-10-13 13:53:19.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2026-10-13 13:53:19.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.6.5.5623] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 164
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2026-10-13 13:53:19.0|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.6.5.5623] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 164
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 101
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass8_0.<HandleAsync>b__0(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 76
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2026-10-13 13:53:24.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- Name: Should be unique
+2026-10-13 13:53:24.9|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (3 ms)
+2026-10-13 13:53:29.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- Name: Should be unique
+2026-10-13 13:53:29.9|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (3 ms)
+2026-10-13 13:53:40.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (2 ms)
+2026-10-13 13:53:52.1|Info|ReleaseSearchService|Searching indexer(s): [YTS, The Pirate Bay, LimeTorrents] for Term: [Emperor's New Groove], Offset: 0, Limit: 0, Categories: [2000]
+2026-10-13 13:53:52.1|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=Emperor+s+New+Groove&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:53:52.1|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=Emperor+s+New+Groove&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:53:52.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=emperor.s.new.groove&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:53:52.1|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=emperor.s.new.groove&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:53:52.1|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.fun/search/all/Emperor%27s%20New%20Groove/date/1/
+2026-10-13 13:53:52.1|Debug|Cardigann|Downloading Feed https://www.limetorrents.fun/search/all/Emperor%27s%20New%20Groove/date/1/
+2026-10-13 13:53:52.3|Debug|IndexerHttpClient|Invalid cookie in https://www.limetorrents.fun/search/all/Emperor%27s%20New%20Groove/date/1/
+
+[v2.6.5.5623] System.Net.CookieException: An error occurred when parsing the Cookie header for Uri 'https://www.limetorrents.fun/search/all/Emperor%27s%20New%20Groove/date/1/'.
+ ---> System.ArgumentOutOfRangeException: Count must be positive and count must refer to a location within the string/array/collection. (Parameter 'count')
+   at System.String.IndexOf(Char value, Int32 startIndex, Int32 count)
+   at System.Net.Cookie.VerifySetDefaults(CookieVariant variant, Uri uri, Boolean isLocalDomain, String localDomain, Boolean setDefault, Boolean shouldThrow)
+   at System.Net.CookieContainer.CookieCutter(Uri uri, String headerName, String setCookieHeader, Boolean isThrow)
+   --- End of inner exception stack trace ---
+   at System.Net.CookieContainer.CookieCutter(Uri uri, String headerName, String setCookieHeader, Boolean isThrow)
+   at NzbDrone.Common.Http.HttpClient.AddCookiesToContainer(HttpUri url, String[] cookieHeaders, CookieContainer container) in ./NzbDrone.Common/Http/HttpClient.cs:line 316
+
+
+2026-10-13 13:53:53.0|Debug|ReleaseSearchService|Total of 57 reports were found for Term: [Emperor's New Groove], Offset: 0, Limit: 0, Categories: [2000] from 3 indexer(s)
+2026-10-13 13:53:53.0|Debug|Api|[GET] /api/v1/search?query=Emperor%27s+New+Groove&categories=2000: 200.OK (1000 ms)
+2026-10-13 13:54:34.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 13:54:34.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:34.7|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:34.7|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 13:54:34.7|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:54:34.7|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:54:35.1|Debug|ReleaseSearchService|Total of 100 reports were found for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 13:54:35.2|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 13:54:36.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 13:54:36.8|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 13:54:38.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 13:54:38.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:38.7|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:39.6|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 13:54:40.6|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 13:54:40.6|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:54:40.6|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 13:54:40.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 13:54:40.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:40.7|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:41.0|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 13:54:41.1|Debug|ReleaseSearchService|Total of 29 reports were found for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 13:54:42.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 13:54:42.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:42.7|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 13:54:43.6|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:02:54.5|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:02:54.5|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:02:54.5|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:02:54.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:02:54.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:02:54.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:02:54.7|Debug|ReleaseSearchService|Total of 100 reports were found for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:02:55.1|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:02:56.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:02:56.5|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:02:58.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:02:58.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:02:58.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:02:58.6|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:02:59.5|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:02:59.5|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:02:59.5|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:02:59.9|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:03:00.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:03:00.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:03:00.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:03:00.6|Debug|ReleaseSearchService|Total of 29 reports were found for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:03:02.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:03:02.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:03:02.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:03:02.6|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:05:00.6|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:05:00.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:05:00.6|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:05:00.6|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:05:00.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 14:05:00.6|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 14:05:00.7|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:05:01.1|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:11:48.6|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:11:48.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:11:48.6|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:11:48.6|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:11:48.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:11:48.6|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:11:48.7|Debug|ReleaseSearchService|Total of 29 reports were found for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:11:49.1|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:11:50.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:11:50.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:11:50.6|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:11:50.6|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:20:06.3|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:20:06.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:20:06.3|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:06.3|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:06.3|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:20:06.3|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:20:06.4|Debug|ReleaseSearchService|Total of 100 reports were found for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:20:06.8|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:20:08.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:20:08.3|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:20:10.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:20:10.3|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:10.3|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:10.4|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:20:11.2|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:20:11.2|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:20:11.2|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:20:11.6|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:20:12.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:20:12.3|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:12.3|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:12.3|Debug|ReleaseSearchService|Total of 29 reports were found for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:20:14.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:20:14.3|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:14.3|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:20:14.4|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:24:27.6|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:24:27.6|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:24:27.6|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt10872600&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:24:27.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:24:27.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:27.6|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=spider.man.no.way.home.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:27.7|Debug|ReleaseSearchService|Total of 100 reports were found for Term: [Spider Man No Way Home 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:24:28.0|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [] | ID(s): IMDbId:[10872600], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:24:29.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:24:29.6|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Spider Man No Way Home 2021], Offset: 100, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:24:31.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:24:31.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:31.6|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=homem.aranha.sem.volta.para.casa.2021&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:31.6|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [Homem Aranha Sem Volta Para Casa 2021], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:24:32.5|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:24:32.5|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:24:32.5|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0120917&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:24:33.2|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [] | ID(s): IMDbId:[0120917], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 14:24:33.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:24:33.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:33.6|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=emperors.new.groove.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:33.6|Debug|ReleaseSearchService|Total of 29 reports were found for Term: [Emperors New Groove 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:24:35.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:24:35.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:35.6|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=a.nova.onda.do.imperador.2000&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 14:24:35.6|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [A Nova Onda do Imperador 2000], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:35:30.9|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 14:35:30.9|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:35:30.9|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 14:35:30.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 14:35:30.9|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 14:35:30.9|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 14:35:31.0|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 14:35:31.8|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 15:06:01.1|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 15:06:01.1|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 15:06:01.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 15:06:01.1|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 15:06:01.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 15:06:01.1|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 15:06:01.2|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 15:06:01.7|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 15:09:05.3|Debug|InstallUpdateService|Checking for updates
+2026-10-13 15:09:05.5|Debug|InstallUpdateService|No update available
+2026-10-13 15:10:35.5|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2026-10-13 15:26:07.1|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:57812
+2026-10-13 15:26:07.2|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:57812
+2026-10-13 15:36:31.4|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 15:36:31.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 15:36:31.4|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 15:36:31.4|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 15:36:31.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 15:36:31.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 15:36:31.5|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 15:36:32.0|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 15:56:35.4|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 15:56:35.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2026-10-13 15:56:35.5|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.fun/latest100
+2026-10-13 15:56:35.5|Debug|Cardigann|Downloading Feed https://www.limetorrents.fun/latest100
+2026-10-13 15:56:35.8|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2026-10-13 15:56:35.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2026-10-13 15:56:35.8|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.6.5.5623] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 164
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2026-10-13 15:56:35.8|Debug|RadarrV3Proxy|Retrying to add indexer forcefully
+2026-10-13 15:56:37.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2026-10-13 15:56:37.5|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.fun/latest100
+2026-10-13 15:56:37.5|Debug|Cardigann|Downloading Feed https://www.limetorrents.fun/latest100
+2026-10-13 15:56:37.6|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2026-10-13 15:56:37.6|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2026-10-13 15:56:37.6|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.6.5.5623] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 164
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2026-10-13 15:56:37.6|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.6.5.5623] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 164
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 101
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2026-10-13 15:56:37.6|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 15:56:37.6|Debug|Radarr|Updating indexer The Pirate Bay [2]
+2026-10-13 15:56:37.7|Debug|Radarr|Remote indexer The Pirate Bay (Prowlarr) [2] found
+2026-10-13 15:56:37.7|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 15:56:37.7|Debug|Radarr|Updating indexer YTS [1]
+2026-10-13 15:56:37.7|Debug|Radarr|Remote indexer YTS (Prowlarr) [1] found
+2026-10-13 15:56:37.7|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 15:56:37.7|Debug|ApplicationService|No tags set to application Radarr.
+2026-10-13 16:07:01.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 16:07:01.7|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 16:07:01.7|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 16:07:01.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 16:07:01.7|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 16:07:01.7|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 16:07:02.1|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 16:07:02.7|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 16:37:32.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 16:37:32.0|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 16:37:32.0|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 16:37:32.0|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 16:37:32.0|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 16:37:32.0|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 16:37:32.2|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 16:37:32.7|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 17:08:02.4|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 17:08:02.4|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 17:08:02.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 17:08:02.4|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 17:08:02.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 17:08:02.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 17:08:02.5|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 17:08:02.9|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 17:38:32.7|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 17:38:32.7|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 17:38:32.7|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 17:38:32.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 17:38:32.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 17:38:32.7|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 17:38:32.8|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 17:38:33.3|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 17:54:20.6|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:43022
+2026-10-13 17:54:20.7|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:43022
+2026-10-13 18:09:03.0|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 18:09:03.0|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 18:09:03.0|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 18:09:03.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 18:09:03.0|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 18:09:03.0|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 18:09:03.1|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 18:09:03.7|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 18:39:33.3|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 18:39:33.3|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 18:39:33.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 18:39:33.3|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 18:39:33.3|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 18:39:33.3|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 18:39:33.5|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 18:39:34.0|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 18:59:25.5|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [] | ID(s): IMDbId:[0090248], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 18:59:25.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Vampire Hunter D 1985], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 18:59:25.5|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0090248&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 18:59:25.5|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?query_term=tt0090248&limit=50&sort_by=date_added&order_by=desc
+2026-10-13 18:59:25.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=vampire.hunter.d.1985&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 18:59:25.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=vampire.hunter.d.1985&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 18:59:26.1|Debug|ReleaseSearchService|Total of 2 reports were found for Term: [] | ID(s): IMDbId:[0090248], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 18:59:26.6|Debug|ReleaseSearchService|Total of 13 reports were found for Term: [Vampire Hunter D 1985], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 18:59:27.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [ハンハイアハンターD 1985], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 18:59:27.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=%E3%83%8F%E3%83%B3%E3%83%8F%E3%82%A4%E3%82%A2%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BCd.1985&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 18:59:27.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=%E3%83%8F%E3%83%B3%E3%83%8F%E3%82%A4%E3%82%A2%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BCd.1985&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2026-10-13 18:59:28.9|Debug|ReleaseSearchService|Total of 84 reports were found for Term: [ハンハイアハンターD 1985], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 19:10:03.6|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 19:10:03.6|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 19:10:03.6|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 19:10:03.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 19:10:03.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 19:10:03.6|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 19:10:03.7|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 19:10:04.4|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 19:40:33.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 19:40:33.9|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 19:40:33.9|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 19:40:33.9|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 19:40:33.9|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 19:40:33.9|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 19:40:34.0|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 19:40:34.5|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 20:11:04.2|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 20:11:04.2|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 20:11:04.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 20:11:04.2|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 20:11:04.2|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 20:11:04.2|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 20:11:04.3|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 20:11:04.9|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
+2026-10-13 20:16:47.7|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:40998
+2026-10-13 20:16:47.8|Debug|Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware|Unknown proxy: [::ffff:10.0.6.5]:40998
+2026-10-13 20:41:34.5|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2026-10-13 20:41:34.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2026-10-13 20:41:34.5|Debug|Cardigann|Adding request for YTS: https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 20:41:34.5|Debug|Cardigann|Downloading Feed https://movies-api.accel.li/api/v2/list_movies.json?limit=50&sort_by=date_added&order_by=desc
+2026-10-13 20:41:34.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 20:41:34.5|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2026-10-13 20:41:35.0|Debug|ReleaseSearchService|Total of 5 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2026-10-13 20:41:35.5|Debug|ReleaseSearchService|Total of 103 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060] from 1 indexer(s)
