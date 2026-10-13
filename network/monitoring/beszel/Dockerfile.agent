@@ -1,0 +1,21 @@
+# Agente Beszel compilado do upstream (main) para trazer o fix do parser do
+# intel_gpu_top em i915 (objetos JSON sem vírgula). A última release (v0.21.0)
+# não consegue ler a saída do intel_gpu_top no Coffeelake, então usamos o commit
+# abaixo até sair a próxima release. Reverter para a imagem oficial
+# (henrygd/beszel-agent-intel:latest) assim que o fix for lançado.
+#
+# Rebuild:  docker compose build --no-cache beszel-agent
+# Atualizar: troque BESZEL_REF por um novo SHA do main.
+FROM golang:1.27-alpine AS build
+ARG BESZEL_REF=bb23f99b3eeaced9608e11e280e7c986dba650be
+RUN apk add --no-cache git
+WORKDIR /src
+RUN git init -q \
+ && git remote add origin https://github.com/henrygd/beszel \
+ && git fetch -q --depth 1 origin "$BESZEL_REF" \
+ && git checkout -q FETCH_HEAD \
+ && CGO_ENABLED=0 go build -trimpath -ldflags "-w -s" -o /agent ./internal/cmd/agent
+
+# Base oficial com intel_gpu_top/nvtop/smartctl, só substituindo o binário.
+FROM henrygd/beszel-agent-intel:latest
+COPY --from=build /agent /agent

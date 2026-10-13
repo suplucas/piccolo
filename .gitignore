@@ -38,3 +38,8 @@ backups/
 network/proxy/caddy_data/
 network/proxy/caddy_config/
 network/proxy/netbird-client/
+
+# Dados de runtime do Beszel (banco sqlite, chave SSH do hub e config.yml com token)
+network/monitoring/beszel/beszel_data/
+network/monitoring/beszel/beszel_agent_data/
+network/monitoring/beszel/beszel_socket/

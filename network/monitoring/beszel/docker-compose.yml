@@ -13,9 +13,22 @@ services:
 
   beszel-agent:
     container_name: beszel-agent
-    image: henrygd/beszel-agent:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+      network: host
+    image: local/beszel-agent-intel:dev
     restart: unless-stopped
     network_mode: host
+    pid: host                            # necessário para utilização da iGPU (intel_gpu_top)
+    cap_add:
+      - SYS_RAWIO                        # S.M.A.R.T. (SATA)
+      - SYS_ADMIN                        # S.M.A.R.T. (NVMe)
+      - PERFMON                          # intel_gpu_top (PMU/perf da iGPU)
+    devices:
+      - /dev/dri:/dev/dri                # iGPU Intel UHD 630
+      - /dev/nvme0:/dev/nvme0            # S.M.A.R.T. do NVMe
+      - /dev/sda:/dev/sda                # S.M.A.R.T. do SSD SATA
     volumes:
       - ./beszel_agent_data:/var/lib/beszel-agent
       - ./beszel_socket:/beszel_socket
@@ -24,6 +37,22 @@ services:
       LISTEN: /beszel_socket/beszel.sock
       KEY: ${BESZEL_KEY}
       TOKEN: ${BESZEL_TOKEN}
+      GPU_COLLECTOR: intel_gpu_top
+      INTEL_GPU_DEVICE: drm:/dev/dri/card1
+      NICS: eno2,wt0
+
+  # Retenção estrita (14d). O built-in do Beszel só agrega, não apaga; este
+  # sidecar roda o prune diário no data.db. Veja prune.sh.
+  beszel-prune:
+    container_name: beszel-prune
+    image: alpine:3.24
+    restart: unless-stopped
+    command: ["sh", "/prune.sh"]
+    environment:
+      RETENTION_DAYS: "14"
+    volumes:
+      - ./beszel_data:/data
+      - ./prune.sh:/prune.sh:ro
 
 networks:
   proxy_net:

@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Métricas RED auto-instrumentadas pelo Beyla (HTTP/gRPC) via eBPF.
+  - job_name: beyla
+    static_configs:
+      - targets: ["beyla:9400"]
+
+  # Auto-monitoramento do próprio Prometheus.
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]
