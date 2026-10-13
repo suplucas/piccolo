@@ -15,7 +15,7 @@
               title: Mídia
               sites:
                 - title: Jellyfin
-                  url: https://jellyfin.piccollo.stream/web/#/home
+                  url: http://100.90.38.203:8096/web/#/home
                   icon: si:jellyfin
 
                 - title: Seerr
@@ -77,6 +77,10 @@
                 - title: Logs (Dozzle)
                   url: http://100.90.38.203:8082
                   icon: mdi:text-box-search
+
+                - title: Dashboards (Grafana)
+                  url: http://100.90.38.203:3001
+                  icon: si:grafana
 
         - type: bookmarks
           groups:
