@@ -84,6 +84,14 @@
 
         - type: bookmarks
           groups:
+            - title: Infra
+              links:
+                - title: Cloudflare (Zero Trust)
+                  url: https://one.dash.cloudflare.com/
+                  icon: si:cloudflare
+                - title: NetBird
+                  url: https://app.netbird.io/
+                  icon: mdi:vpn
             - title: General
               links:
                 - title: Gmail
