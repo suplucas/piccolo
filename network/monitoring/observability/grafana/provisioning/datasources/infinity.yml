@@ -1,0 +1,17 @@
+apiVersion: 1
+
+# Datasource Infinity para consultar a API REST do Jellyfin (ex.: /Sessions),
+# usado na tabela de "Clients". O header Authorization usa o token via env.
+datasources:
+  - name: Jellyfin
+    uid: jellyfin
+    type: yesoreyeram-infinity-datasource
+    access: proxy
+    jsonData:
+      auth_method: apiKey
+      apiKeyType: header
+      apiKeyKey: Authorization
+      allowedHosts:
+        - http://jellyfin:8096
+    secureJsonData:
+      apiKeyValue: "MediaBrowser Token=${JELLYFIN_TOKEN}"

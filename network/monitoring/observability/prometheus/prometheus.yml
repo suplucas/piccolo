@@ -3,12 +3,43 @@ global:
   evaluation_interval: 15s
 
 scrape_configs:
-  # Métricas RED auto-instrumentadas pelo Beyla (HTTP/gRPC) via eBPF.
-  - job_name: beyla
-    static_configs:
-      - targets: ["beyla:9400"]
-
-  # Auto-monitoramento do próprio Prometheus.
   - job_name: prometheus
     static_configs:
       - targets: ["localhost:9090"]
+
+  # Host: CPU, memória, temperatura, disco, rede, conexões.
+  # node_exporter roda em network_mode host -> scrape via host-gateway.
+  - job_name: node
+    static_configs:
+      - targets: ["host.docker.internal:9100"]
+
+  # Containers: CPU/mem/rede por container.
+  - job_name: cadvisor
+    static_configs:
+      - targets: ["cadvisor:8080"]
+    metric_relabel_configs:
+      # Derruba métricas ruidosas (cardinalidade/disco).
+      - source_labels: [__name__]
+        regex: "container_(blkio|spec|tasks|memory_numa|hugetlb|percpu|memory_failcnt).*"
+        action: drop
+      # Agrupa containers no serviço lógico (label `service`).
+      # Ex.: immich_server, immich_postgres -> service="immich".
+      - source_labels: [name]
+        target_label: service
+        regex: "^(immich|nextcloud|jellyfin|adguardhome|qbittorrent|radarr|prowlarr|seerr|vaultwarden|portainer|grafana|prometheus|caddy|cloudflared|netbird|beszel|dozzle|gatus|glance|flaresolverr|beyla|node_exporter|cadvisor)([_-].*)?$"
+        replacement: "$1"
+
+  # Uptime e latência por serviço (checks do Gatus).
+  - job_name: gatus
+    static_configs:
+      - targets: ["gatus:8080"]
+
+  # Sessões/streams/transcodes do Jellyfin.
+  - job_name: jellyfin
+    static_configs:
+      - targets: ["jellyfin-exporter:9594"]
+
+  # RED (HTTP/gRPC) auto-instrumentado via eBPF.
+  - job_name: beyla
+    static_configs:
+      - targets: ["beyla:9400"]

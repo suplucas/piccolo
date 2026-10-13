@@ -8,6 +8,9 @@ storage:
 web:
   port: 8080
 
+# Expõe métricas Prometheus em /metrics (raspadas pelo Prometheus/Grafana).
+metrics: true
+
 ui:
   title: Homelab Status
   header: Homelab Status

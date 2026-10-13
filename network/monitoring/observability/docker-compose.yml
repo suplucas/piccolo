@@ -12,8 +12,11 @@ services:
       - prometheus_data:/prometheus
     ports:
       - "100.90.38.203:9090:9090/tcp"   # só via VPN NetBird
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # p/ raspar o node_exporter (host netns)
     networks:
       - observability
+      - proxy_net          # para alcançar os serviços (ex.: Gatus) pelo nome
 
   grafana:
     container_name: grafana
@@ -27,6 +30,9 @@ services:
       GF_USERS_ALLOW_SIGN_UP: "false"
       GF_ANALYTICS_REPORTING_ENABLED: "false"
       GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+      # Plugin p/ consultar a API REST do Jellyfin (/Sessions) — tabela de clients.
+      GF_INSTALL_PLUGINS: yesoreyeram-infinity-datasource
+      JELLYFIN_TOKEN: ${JELLYFIN_TOKEN:?defina JELLYFIN_TOKEN no .env}
     volumes:
       - grafana_data:/var/lib/grafana
       - ./grafana/provisioning:/etc/grafana/provisioning:ro
@@ -35,6 +41,7 @@ services:
       - "100.90.38.203:3001:3000/tcp"   # 3000 ocupado pelo AdGuard Home; só via VPN NetBird
     networks:
       - observability
+      - proxy_net          # p/ o datasource Infinity alcançar o Jellyfin (/Sessions)
 
   # Auto-instrumentação eBPF (HTTP/gRPC) sem tocar no código dos serviços.
   # Expõe métricas RED em :9400/metrics (raspadas pelo Prometheus).
@@ -53,9 +60,62 @@ services:
     networks:
       - observability
 
+  # Métricas do host (CPU, mem, temp, disco, rede, conexões). --path.rootfs=/host
+  # faz o exporter ler /proc e /sys do host montados em /host.
+  node_exporter:
+    container_name: node_exporter
+    image: prom/node-exporter:latest
+    restart: unless-stopped
+    network_mode: host           # precisa do netns do host p/ ver eno2/wt0
+    pid: host
+    command:
+      - --path.procfs=/host/proc      # lê /proc do host
+      - --path.sysfs=/host/sys        # lê /sys do host (hwmon, interfaces)
+      - --path.rootfs=/host           # lê / do host (filesystem)
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/host:ro,rslave
+
+  # Métricas por container (CPU/mem/rede). Cardinalidade reduzida via
+  # --disable_metrics + relabel no Prometheus (ver prometheus.yml).
+  cadvisor:
+    container_name: cadvisor
+    image: gcr.io/cadvisor/cadvisor:latest
+    restart: unless-stopped
+    privileged: true
+    devices:
+      - /dev/kmsg:/dev/kmsg
+    command:
+      - --docker_only=true
+      - --housekeeping_interval=30s
+      - --disable_metrics=advtcp,cpu_topology,cpuset,hugetlb,memory_numa,process,referenced_memory,resctrl,sched,tcp,udp
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    networks:
+      - observability
+
+  # Sessões/streams/transcodes do Jellyfin (expõe /metrics em :9594).
+  jellyfin-exporter:
+    container_name: jellyfin-exporter
+    image: rebelcore/jellyfin-exporter:latest
+    restart: unless-stopped
+    environment:
+      JELLYFIN_ADDRESS: http://jellyfin:8096
+      JELLYFIN_TOKEN: ${JELLYFIN_TOKEN:?defina JELLYFIN_TOKEN no .env}
+    networks:
+      - observability
+      - proxy_net          # alcança o container jellyfin
+
 volumes:
   prometheus_data:
   grafana_data:
 
 networks:
   observability:
+  proxy_net:
+    external: true
